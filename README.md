@@ -1,5 +1,5 @@
 # Company Panel
-## 
+ 
 
 CompanyPanel was developed with .NET 5.0. N-Tier architectural structure was used in the project. The project was developed within the scope of the EGEBARKOD internship project. The project performs integration processes for companies.
 

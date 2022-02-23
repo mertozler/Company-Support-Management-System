@@ -1,0 +1,57 @@
+﻿@using EntityLayer.Concrete
+@model List<User>
+
+@{
+    ViewData["Title"] = "UserApplicationConfirm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if(Model.Any())
+{
+    <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Kayıt Bekleyen Kullanıcı Listesi</h3>
+              </div>
+              
+              <br/>
+              <div class="card">
+                        <div class="card-header">
+                        <h3 class="card-title">Kullanıcılar</h3>
+                        </div>
+ 
+                        <div class="card-body">
+                        <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Kullanıcı Adı Soyadı</th>
+                        <th>Kullanıcının Başvurduğu Şirket</th>
+                        <th>Kullanıcının Rolü</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var item in Model)
+                        {
+                        <tr>
+                           
+                        <td>@item.UserId</td>
+                        <td>@item.UserNameSurname</td>
+                        <td>@item.UserApplicationFirm</td>
+                        <td>
+                            <a href="/Admin/UserRegister/@item.UserId"><span class="badge bg-danger">Kullanıcı Şirket Kaydı Yap</span></a>
+                              
+                        </td>
+                       
+                        </tr>
+                         }
+                        </tbody>
+                        </table>
+                        </div>
+
+
+                        </div>
+                        </div>
+
+                      
+}
+

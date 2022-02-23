@@ -1,0 +1,45 @@
+﻿@model CompanyPanelUI.DTOS.FirmsDTO
+
+@{
+    ViewData["Title"] = "Firms";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Firma Kaydı</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start --> 
+              <form asp-action="Firms" method="post" asp-controller="Admin">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Firma Adı</label>
+                    <input type="text" asp-for="FirmName" class="form-control" id="FirmName"  name="FirmName" placeholder="Firma Adı">
+                    @Html.ValidationMessageFor(x=>x.FirmName)
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Firma Vergi Numarası</label>
+                    <input type="number" asp-for="FirmTaxNo" class="form-control" id="FirmTaxNo"  name="FirmTaxNo" placeholder="Vergi Numarası">
+                    @Html.ValidationMessageFor(x=>x.FirmTaxNo)
+                  </div>
+                   <div class="form-group">
+                    <label for="exampleInputPassword1">Firma Telefon Numarası</label>
+                    <input type="number" asp-for="FirmTelNo" class="form-control" id="FirmTelNo" name="FirmTelNo"  placeholder="Telefon Numarası">
+                    @Html.ValidationMessageFor(x=>x.FirmTelNo)
+                  </div>
+                   <div class="form-group">
+                    <label for="exampleInputPassword1">Firma Mail Adresi</label>
+                    <input type="email" asp-for="FirmMail" class="form-control" id="FirmMail" name="FirmMail" placeholder="Mail Adresi">
+                    @Html.ValidationMessageFor(x=>x.FirmMail)
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Firma Ekle</button>
+                </div>
+              </form>
+            </div>
+
+

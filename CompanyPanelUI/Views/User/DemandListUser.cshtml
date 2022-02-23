@@ -1,0 +1,157 @@
+﻿@using CompanyPanelUI.Models.DemandListViewModel
+@using EntityLayer.Concrete
+
+@model DemandListViewModel
+
+@{
+    ViewData["Title"] = "DemandListUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br/>
+<div class="card card-primary">
+    <div class="card-header">
+                <h3 class="card-title">Talepleri Filtrele</h3>
+              </div>
+
+              <div class="card">
+                  <div class="card-body">
+
+                      <div class="container">
+                          <form asp-action="DemandListUser" method="post" asp-controller="User">
+                          <div class="row">
+                            <div class="col-sm">
+                                <h3>Tarih Aralığı Seçin</h3>
+                             <label for="StartDate">Başlangıç Tarihi:</label>
+                               <input type="date" asp-for="StartDate" class="form-control" id="StartDate"  name="StartDate" placeholder="@Model.StartDate">
+                               <label for="EndDate">Bitiş Tarihi:</label>
+                                <input type="date" asp-for="EndDate" class="form-control" id="EndDate"  name="EndDate" placeholder="@Model.EndDate">
+                            </div>
+                            <div class="col-sm">
+                                 <h3>Talep Durumu Seçin</h3>
+                                
+                                <label for="vehicle1">Aktif Talepler</label><br>
+                                <input type="checkbox" asp-for="CevaplanmamisTalep" class="form-control" id="CevaplanmamisTalep"  name="CevaplanmamisTalep" >
+                            <label for="vehicle1">Kapatılan Talepler</label><br>
+                             <input type="checkbox" asp-for="Yanitlanmistalep" class="form-control" id="Yanitlanmistalep"  name="Yanitlanmistalep">
+                            </div>
+                            <div class="col-sm">
+                               <h3>Hizmet Seçin</h3>
+                               <select name="ServiceId" asp-for="ServiceId">
+                              @foreach (var item in Model.Services)
+                              {
+                              <option value="@item.ServiceId">@item.ServiceName</option>
+
+                                      }
+                                  </select>
+                            </div>
+                          </div>
+                          <div class="col-sm">
+                          <button type="submit" class="btn btn-success">Filtrele</button>
+                           
+                          <a class="btn btn-info" href="/User/DemandListUser">Sıfırla</a>
+                          </div>
+                          </form>
+                        </div>
+
+
+
+                     
+                      </div>
+                  </div>
+
+    
+              <div class="card-header">
+                <h3 class="card-title">Yaptığım Talepler</h3>
+              </div>
+
+              
+
+              <div class="card">
+                       
+             
+
+             
+            <button onclick="location.href='/User/AddDemand'" type="button" style="
+line-height: 8px;
+     width: 150px;
+     font-size: 12pt;
+     font-family: tahoma;
+     margin-top: 7px;
+     margin-right: 7px;
+     position:absolute;
+     top:0;
+     right:0;" class="btn btn-block btn-success btn-lg">
+         Talep Oluştur</button>
+
+             
+
+             
+              <br/>
+
+ 
+                        <div class="card-body">
+                        <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Talep Başlığı</th>
+                        <th>Talep İçeriği</th>
+                        <th>Talep Gönderilme Tarihi</th>
+                        <th>Talep Durumu</th>
+                        <th style="width: 40px">Talep Seçimi</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var item in Model.Demands)
+                        {
+                        <tr>
+                           
+                        <td>@item.DemandId</td>
+                        @if(item.DemandTitle.Length >= 30)
+                            {
+                                <td>
+                        @item.DemandTitle.Substring(0, 30) ..
+                        </td>
+                            }
+                            else
+                            {
+                                
+                            <td>
+                        @item.DemandTitle
+                        </td>
+                            }
+                        <td>
+                        @item.DemandContent.Substring(0,20) ...
+                        </td><td>
+                        @(((DateTime)item.DemandCreateTime).ToString("dd.MM.yyyy"))
+                       
+                        </td>
+                            @if (item.DemandStatus == true)
+                            {
+                            <td class="bg-danger">
+                                Cevaplanmamış
+                            </td>
+                                
+                            }else{
+                                <td class="bg-success">
+                                Yanıtlanmış
+                            </td>
+                            }
+
+                        <td>
+                            <a href="/User/GoDemandChat/@item.DemandId"><span class="badge bg-danger">Talep Görüntüle</span></a>
+                              
+                        </td>
+                       
+                        </tr>
+                         }
+                        </tbody>
+                        </table>
+                        </div>
+
+
+                        </div>
+
+                        </div
+
+               

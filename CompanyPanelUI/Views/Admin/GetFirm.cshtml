@@ -1,0 +1,139 @@
+﻿@using CompanyPanelUI.Models.GetFirmViewModel
+
+
+@model GetFirmViewModel
+
+@{
+    ViewData["Title"] = "GetFirm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Firma Düzenle</h3>
+              </div>
+
+              <div class="card">
+                  <div class="card-header">
+                          <div class="card">
+                              <div class="card-header">
+                                  <h3 class="card-title">Firma Bilgileri</h3>
+                              </div>
+
+                                  <form asp-action="GetFirm" method="post" asp-controller="Admin">
+                                                <div class="card-body">
+                                                  <div class="form-group">
+                                                      <input type="hidden" asp-for="firm.FirmId" name="firm.FirmId" value="@Model.firm.FirmId"/>
+                                                    <label for="exampleInputEmail1">Firma Adı</label>
+                                                    <input type="text" asp-for="firm.FirmName" class="form-control" id="firm.FirmName"  name="firm.FirmName" placeholder="@Model.firm.FirmName">
+                                                    @Html.ValidationMessageFor(x=>x.FirmName)
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label for="exampleInputPassword1">Firma Vergi Numarası</label>
+                                                    <input type="number" asp-for="firm.FirmTaxNo" class="form-control" id="firm.FirmTaxNo"  name="firm.FirmTaxNo" placeholder="@Model.firm.FirmTaxNo">
+                                                    @Html.ValidationMessageFor(x=>x.FirmTaxNo)
+                                                  </div>
+                                                   <div class="form-group">
+                                                    <label for="exampleInputPassword1">Firma Telefon Numarası</label>
+                                                    <input type="number" asp-for="firm.FirmTelNo" class="form-control" id="firm.FirmTelNo" name="firm.FirmTelNo"  placeholder="@Model.firm.FirmTelNo">
+                                                    @Html.ValidationMessageFor(x=>x.FirmTelNo)
+                                                  </div>
+                                                   <div class="form-group">
+                                                    <label for="exampleInputPassword1">Firma Mail Adresi</label>
+                                                    <input type="email" asp-for="firm.FirmMail" class="form-control" id="firm.FirmMail" name="firm.FirmMail" placeholder="@Model.firm.FirmMail">
+                                                    @Html.ValidationMessageFor(x=>x.FirmMail)
+                                                  </div>
+                                                </div>
+                                                <!-- /.card-body -->
+
+                                                <div class="card-footer">
+                                                  <button type="submit" class="btn btn-primary">Firma Güncelle</button>
+                                                </div>
+                                              </form>
+                          </div>
+
+
+                          <div class="card-header">
+                <h3 class="card-title">Firmaya Kayıtlı Kullanıcılar</h3>
+              </div>
+
+              <div class="card">
+                  <div class="card-header">
+                   <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Kullanıcı Adı Soyadı</th>
+                            <th>Kullanıcının Maili</th>
+                            <th>Kullanıcının Telefonu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                           @foreach(var item in Model.firmUsers)
+                            {
+                                
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.NameSurname</td>
+                                <td>@item.Email</td>
+                                <td>@item.PhoneNumber</td>
+                            </tr>
+                            }
+                        
+                    </tbody>
+                </table>
+
+                 </div>
+                 </div>
+
+                  <div class="card-header">
+                <h3 class="card-title">Firmaya Tanımlı Hizmetler</h3>
+                <button onclick="location.href='/Admin/CreateService'" type="button" style="
+line-height: 8px;
+     width: 150px;
+     font-size: 12pt;
+     font-family: tahoma;
+     margin-top: 7px;
+     margin-right: 7px;
+     position:absolute;
+     top:0;
+     right:0;" class="btn btn-block btn-success btn-lg">
+         Hizmet Oluştur</button>
+              </div>
+
+              <div class="card">
+                  
+                  <div class="card-header">
+                   <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Hizmet Adı</th>
+                            <th>Hizmet Açıklaması</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                           @foreach (var item in Model.firmService)
+                            {
+                                
+                            <tr>
+                                <td>@item.ServiceId</td>
+                                <td>@item.ServiceName</td>
+                                <td>@item.ServiceAbout</td>
+                            </tr>
+                            }
+                        
+                    </tbody>
+                </table>
+
+                 </div>
+                 </div>
+                 
+                      </div>
+
+</div>
+</div>
+

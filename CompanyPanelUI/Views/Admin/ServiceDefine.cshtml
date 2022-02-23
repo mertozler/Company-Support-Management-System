@@ -1,0 +1,50 @@
+﻿@using EntityLayer.Concrete
+
+@model List<Firm>
+@{
+    ViewData["Title"] = "ServiceDefine";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+ 
+ 
+                        <div class="card-body">
+                        <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Şirket Adı</th>
+                        <th>Şirket Vergi Numarası</th>
+                        <th>Şirket Telefon Numarası</th>
+                        <th>Şirket Mail</th>
+                        <th style="width: 40px">Şirket Seç</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var item in Model)
+                        {
+                        <tr>
+                           
+                        <td>@item.FirmId</td>
+                        <td>@item.FirmName</td>
+                        <td>@item.FirmTaxNo</td>
+                        <td>@item.FirmTelNo</td>
+                        <td>@item.FirmMail</td>
+                        <td>
+                            <a href="/Admin/ServiceDefineForFirm/@item.FirmId"><span class="badge bg-danger">Şirket Hizmet Tanımlaması Yap</span></a>
+                              
+                        </td>
+                       
+                        </tr>
+                         }
+                        </tbody>
+                        </table>
+                        </div>
+
+             
+</div>
+
+
+

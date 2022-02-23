@@ -1,0 +1,221 @@
+﻿@using EntityLayer.Concrete
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<CustomUser> UserManager
+
+@inject SignInManager<CustomUser> SignInManager
+
+    
+@{
+    var girisYapanKullanici = await UserManager.GetUserAsync(User);
+    IList<string> kullaniciRolleri = null;
+    if(girisYapanKullanici!=null)
+    {
+        kullaniciRolleri = await UserManager.GetRolesAsync(girisYapanKullanici);
+    }
+    
+}
+
+@if (kullaniciRolleri == null)
+{
+    
+}
+
+else if (kullaniciRolleri[0] == "musteri")
+{
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/Admin/Index" class="brand-link">
+
+        <span class="brand-text font-weight-light">Company Panel</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+
+            <div class="info">
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a href="#" class="d-block">Hoşgeldin @girisYapanKullanici.NameSurname</a>
+                }
+                else
+                {
+                    <a href="#" class="d-block"></a>
+                }
+            </div>
+        </div>
+<!-- Main Sidebar Container -->
+
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    
+           <li class="nav-item">
+                    <a href="/User/DemandListUser" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Talepler
+
+                        </p>
+                    </a>
+                </li>
+
+                
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+}
+else if (kullaniciRolleri[0] == "admin")
+{
+    
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/Admin/Index" class="brand-link">
+
+        <span class="brand-text font-weight-light">Company Panel</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+
+            <div class="info">
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a href="#" class="d-block">Hoşgeldin @girisYapanKullanici.NameSurname</a>
+                }
+                else
+                {
+                    <a href="#" class="d-block"></a>
+                }
+            </div>
+        </div>
+<!-- Main Sidebar Container -->
+
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                
+                <li class="nav-item menu-is-opening menu-open">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>
+                            Firmalar
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview" style="display: block;">
+                        <li class="nav-item">
+                            <a href="/Admin/Firms" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Firma Kaydet</p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav nav-treeview" style="display: block;">
+                        <li class="nav-item">
+                            <a href="/Admin/FirmList" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Firma Listesi</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item menu-is-opening menu-open">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Kullanıcılar
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview" style="display: block;">
+                        <li class="nav-item">
+                            <a href="/Admin/UserApplicationConfirm" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Kullanıcı Kayıt Onayla</p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav nav-treeview" style="display: block;">
+                        <li class="nav-item">
+                            <a href="/Admin/UserList" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Kullanıcı Listesi</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+                <li class="nav-item menu-is-opening menu-open">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Hizmetler
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview" style="display: block;">
+                        <li class="nav-item">
+                            <a href="/Admin/CreateService" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Hizmet Oluştur</p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav nav-treeview" style="display: block;">
+                        <li class="nav-item">
+                            <a href="/Admin/ServiceDefine" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Hizmet Tanımla</p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav nav-treeview" style="display: block;">
+                        <li class="nav-item">
+                            <a href="/Admin/ServiceList" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Hizmet Listesi</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/Admin/DemandList" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Talepler
+
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+}

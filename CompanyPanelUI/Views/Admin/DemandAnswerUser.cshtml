@@ -1,0 +1,116 @@
+﻿@using CompanyPanelUI.Models.DemandReplyViewModel
+@using EntityLayer.Concrete
+@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<CustomUser> UserManager
+@using CompanyPanelUI.Models.UserListViewModel
+
+@model DemandReplyViewModel
+
+@{
+    ViewData["Title"] = "DemandAnswer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-12">
+                <div class="card direct-chat direct-chat-warning">
+                  <div class="card-header">
+                      @foreach(var item in Model.DemandAndAnswerWmList)
+                    {
+                    <h3 class="card-title">Talep No: @item.DemandId | @item.DemandTitle</h3>
+                    }
+                  </div>
+                  <!-- /.card-header -->
+                          @foreach(var item in Model.DemandAndAnswerWmList)
+                    {
+                  <div class="card-body">
+                    <!-- Conversations are loaded here -->
+                    <div class="direct-chat-messages">
+                      <!-- Message. Default to the left -->
+                      <div class="direct-chat-msg">
+                        <div class="direct-chat-infos clearfix">
+                          <span class="direct-chat-name float-left">@item.UserName</span>
+                          <span class="direct-chat-timestamp float-right">@item.DemantCreateDate</span>
+                        </div>
+                        
+                        <div class="direct-chat-text">
+                          @item.DemandContent
+                        </div>
+                        <!-- /.direct-chat-text -->
+                      </div>
+                    </div>
+            </div>
+
+            if(item.DemandAnswer!=null)
+            {
+                <div class="direct-chat-msg right">
+                    <div class="direct-chat-infos clearfix">
+                      <span class="direct-chat-name float-right">Sistem Yöneticisi</span>
+                      <span class="direct-chat-timestamp float-left">@item.DemandAnswerDate</span>
+                    </div>
+                    <div class="direct-chat-text">
+                      @item.DemandAnswer
+                    </div>
+                    <!-- /.direct-chat-text -->
+                  </div>
+            }
+                
+                <!-- /.card-body -->
+                    }
+                    @foreach (var item in Model.DemandAndAnswerWmList)
+        {
+            
+        <!--/.direct-chat-messages-->
+        }
+                  <div class="card-footer">
+                    <form asp-action="DemandAnswerUser" method="post" asp-controller="Admin">
+                      <div class="input-group">
+                    <input type="text" name="DemandAnswerNew" asp-for="DemandAnswerNew" class="form-control" id="DemandAnswerNew"  placeholder="Cevap yaz..">
+                    <input type="hidden" name="DemandIdNew" asp-for="DemandIdNew" value="@ViewBag.id" />
+                        <span class="input-group-append">
+                          <button type="submit" class="btn btn-warning">Talep Yanıtla</button>
+                        </span>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- /.card-footer-->
+                </div>
+                <!--/.direct-chat -->
+              </div>
+              
+               <br />
+
+<div class="card-body">
+    <div class="card-header">
+                     
+                    <h3 class="card-title">Dosyalar</h3>
+                   
+                  </div>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Dosya Adı</th>
+                      <th>Dosyayı İndir</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                        @foreach(var item in Model.DemandAndAnswerWmList)
+                    {
+                    foreach(var itemL in item.DemandFilePath)
+                    {
+                        <tr>
+                        <td>@itemL.DemandFilePath</td>
+                        
+                        <td>
+                            <a href="~/DemandFiles/@itemL.DemandFilePath" download><span class="badge bg-danger">Dosyayı İndir</span></a>
+                              
+                        </td>
+                        </tr>
+                    }
+                }
+                  </tbody>
+                </table>
+              </div>
+             

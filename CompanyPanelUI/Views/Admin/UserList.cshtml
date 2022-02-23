@@ -1,0 +1,86 @@
+﻿@using EntityLayer.Concrete
+
+@using CompanyPanelUI.Models.UserListViewModel
+
+@model UserListViewModel
+
+@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<CustomUser> UserManager
+
+
+
+@{
+    ViewData["Title"] = "UserList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@if (Model.Users.Any())
+{
+
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Kullanıcı Listesi</h3>
+        </div>
+
+        <br />
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Kullanıcılar</h3>
+            </div>
+
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Kullanıcı Adı Soyadı</th>
+                            <th>Kullanıcının Maili</th>
+                            <th>Kullanıcının Telefonu</th>
+                            <th>Kullanıcının Firması</th>
+                            <th>Kullanıcının Rolü</th>
+                            <th>Kullanıcı Ayarları</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Users)
+                        {
+                            var user = await UserManager.FindByIdAsync(item.UserId);
+                            var kullaniciRolleri = await UserManager.GetRolesAsync(user);
+                            <tr>
+                                <td>@item.UserId</td>
+                                <td>@item.UserNameSurname</td>
+                                <td>@item.UserMail</td>
+                                <td>@item.UserPhone</td>
+                                @if(item.Firm!=null)
+                                {
+                                    
+                                    <td class="bg-success">@item.Firm.FirmName</td>
+                                }
+                                else
+                                {
+                                    <td class="bg-danger">Kullanıcının Firması Yoktur</td>
+                                    
+                                }
+                                <td>@kullaniciRolleri.FirstOrDefault().ToUpper()</td>
+                                <td>
+                                    <a href="/Admin/EditUser/@item.UserId" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                                    <a href="/Admin/DeleteUser/@item.UserId" class="btn btn-warning btn-sm" onclick="return confirm('@item.UserNameSurname isimli kullanıcıyı silmek istediğinden emin misin? Bu kullanıcının kayıtlı talepleri ve diğer bilgileri silinecektir. Bu sorumluluğu kabul ediyor musunuz?')"><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+}
+
+
+

@@ -1,0 +1,68 @@
+﻿@using CompanyPanelUI.DTOS
+
+
+@model AddDemandModel
+@{
+    ViewData["Title"] = "AddDemand";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+        <main role="main" class="pb-3">
+            
+
+<div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Talep Oluştur</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start --> 
+              <form asp-action="AddDemand" method="post" enctype="multipart/form-data" asp-controller="User">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Talep Başlığı</label>
+                    <input type="text" class="form-control" asp-for="DemandTitle" name="DemandTitle" id="DemandTitle" name="DemandTitle" placeholder="Talep Başlığı">
+                    @Html.ValidationMessageFor(x=>x.DemandTitle)
+                </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Hizmet Seç</label>
+                    <select name="ServiceId" asp-for="ServiceId">
+                        @Html.ValidationMessageFor(x=>x.ServiceId)
+                          @foreach (var item in Model.Service)
+                          {
+                              <option value="@item.ServiceId">@item.ServiceName</option>
+
+                          }
+                      </select>
+                      <input type="submit" />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Talep İçeriği</label>
+                    <input type="text" class="form-control" asp-for="DemandContent" id="DemandTitle" name="DemandContent" placeholder="Talep İçeriği" value="">
+                    @Html.ValidationMessageFor(x=>x.DemandContent)
+                </div>
+
+                 
+
+                   <div class="form-group">
+                     <label for="files">Dosya yükleyiniz:</label>
+                    <input type="file" name="DemandFile" id="DemandFile" asp-for="DemandFile" multiple/>
+                    @Html.ValidationMessageFor(x=>x.DemandFile)
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Talep Oluştur</button>
+                </div>
+                </form>
+
+        </div></main>
+    </div>
+
+    <script>
+    <script src="~/plugins/bs-custom-file-input/bs-custom-file-input.min.js">
+    
+
+    </script>
+   

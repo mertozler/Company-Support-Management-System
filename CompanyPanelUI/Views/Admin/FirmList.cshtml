@@ -1,0 +1,60 @@
+﻿@using EntityLayer.Concrete
+@model List<Firm>
+
+@{
+    ViewData["Title"] = "FirmList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Any())
+{
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Kayıtlı Firmalar</h3>
+        </div>
+
+        <br />
+        <div class="card">
+            
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Firma Adı</th>
+                            <th>Firma Maili</th>
+                            <th>Firma Vergi Numarası</th>
+                            <th>Firma Telefon Numarası</th>
+                            <th>Firma Ayarları</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>@item.FirmId</td>
+                                <td>@item.FirmName</td>
+                                <td>@item.FirmMail</td>
+                                <td>@item.FirmTaxNo</td>
+                                <td>@item.FirmTelNo</td>
+                                <td>
+                                    <a href="/Admin/GetFirm/@item.FirmId" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                                    <a href="/Admin/DeleteFirm/@item.FirmId" class="btn btn-warning btn-sm" onclick="return confirm('@item.FirmName isimli firmayı silmek istediğinden emin misin? Bu firmaya kayıtlı kullanıcıların hesapları silinecektir. Bu sorumluluğu kabul ediyor musunuz?')"><i class="fas fa-trash"></i></a>
+                                    
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+}
+
+

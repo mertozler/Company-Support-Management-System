@@ -1,0 +1,56 @@
+﻿@using EntityLayer.Concrete
+
+@model List<Service>
+
+@{
+    ViewData["Title"] = "ServiceList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Any())
+{
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Kayıtlı Hizmetler</h3>
+        </div>
+
+        <br />
+        <div class="card">
+            
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Hizmet Adı</th>
+                            <th>Hizmet Açıklaması</th>
+                            <th>Hizmet Ayarları</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>@item.ServiceId</td>
+                                <td>@item.ServiceName</td>
+                                <td>@item.ServiceAbout</td>
+                                <td>
+                                    <a href="/Admin/EditService/@item.ServiceId" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                                    <a href="/Admin/DeleteService/@item.ServiceId" class="btn btn-warning btn-sm" onclick="return confirm('@item.ServiceName isimli hizmeti silmek istediğinden emin misin? Bu hizmetin tanımlı olduğu firmalar olabilir ve eğer silerseniz tanımlı hizmet firmalardan silinecektir. Bu sorumluluğu kabul ediyor musunuz?')"><i class="fas fa-trash"></i></a>
+                                </td>
+                                
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+}
+

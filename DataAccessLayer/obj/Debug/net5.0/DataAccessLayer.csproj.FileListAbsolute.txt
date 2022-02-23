@@ -52,3 +52,21 @@ D:\cp-identity\cp-18subat-now\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\Data
 D:\cp-identity\cp-18subat-now\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
 D:\cp-identity\cp-18subat-now\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
 D:\cp-identity\cp-18subat-now\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.deps.json
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.json
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.dev.json
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\bin\Debug\net5.0\EntityLayer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\bin\Debug\net5.0\EntityLayer.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfo.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\refint\DataAccessLayer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll

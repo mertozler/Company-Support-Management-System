@@ -30,7 +30,7 @@ The project consists of 3 parts. Admin, Customer and Staff. The admin does the b
 
 ```sh
 MAIL: admin@gmail.com
-PASSWORD: 123Mer.
+PASSWORD: 123Admin.
 ```
 
 ## License

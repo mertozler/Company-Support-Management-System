@@ -28,6 +28,7 @@ Then you can start the project, and your logs will start to be kept. From here y
 
 ## How Can I Use?
 The project consists of 3 parts. Admin, Customer and Staff. The admin does the basics to manage the project, the customers create the requests, and the staff deal with the requests sent by the customers. The system administrator is defined by default in the project. You can use the information below to log in.
+Tips: If you want to view the Hangfire Dashboard, you can view it by going to /Admin/Hangfire on your localhost.
 
 ```sh
 MAIL: admin@gmail.com

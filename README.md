@@ -24,6 +24,7 @@ $ cd..
 $ cd .\DataAccessLayer\
 $ dotnet ef database update
 ```
+Then you can start the project, and your logs will start to be kept. From here you can manage the rest from the UI.
 
 ## How Can I Use?
 The project consists of 3 parts. Admin, Customer and Staff. The admin does the basics to manage the project, the customers create the requests, and the staff deal with the requests sent by the customers. The system administrator is defined by default in the project. You can use the information below to log in.

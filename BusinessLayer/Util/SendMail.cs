@@ -24,7 +24,7 @@ namespace BusinessLayer.Util
             message.IsBodyHtml = true;
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587); //Gmail smtp    
             System.Net.NetworkCredential basicCredential1 = new
-                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Mer.");
+                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Admin.");
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
             client.Credentials = basicCredential1;
@@ -45,7 +45,7 @@ namespace BusinessLayer.Util
             message.IsBodyHtml = true;
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587); //Gmail smtp    
             System.Net.NetworkCredential basicCredential1 = new
-                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Mer.");
+                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Admin.");
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
             client.Credentials = basicCredential1;
@@ -66,7 +66,7 @@ namespace BusinessLayer.Util
             message.IsBodyHtml = true;
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587); //Gmail smtp    
             System.Net.NetworkCredential basicCredential1 = new
-                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Mer.");
+                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Admin.");
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
             client.Credentials = basicCredential1;
@@ -90,7 +90,7 @@ namespace BusinessLayer.Util
             message.IsBodyHtml = true;
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587); //Gmail smtp    
             System.Net.NetworkCredential basicCredential1 = new
-                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Mer.");
+                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Admin.");
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
             client.Credentials = basicCredential1;
@@ -112,7 +112,7 @@ namespace BusinessLayer.Util
             message.IsBodyHtml = true;
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587); //Gmail smtp    
             System.Net.NetworkCredential basicCredential1 = new
-                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Mer.");
+                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Admin.");
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
             client.Credentials = basicCredential1;
@@ -134,7 +134,7 @@ namespace BusinessLayer.Util
             
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587); //Gmail smtp    
             System.Net.NetworkCredential basicCredential1 = new
-                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Mer.");
+                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Admin.");
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
             client.Credentials = basicCredential1;
@@ -165,7 +165,7 @@ namespace BusinessLayer.Util
             
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587); //Gmail smtp    
             System.Net.NetworkCredential basicCredential1 = new
-                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Mer.");
+                System.Net.NetworkCredential("companypanel15@gmail.com", "123456Admin.");
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
             client.Credentials = basicCredential1;

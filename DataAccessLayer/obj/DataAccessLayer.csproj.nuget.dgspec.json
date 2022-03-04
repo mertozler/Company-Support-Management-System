@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

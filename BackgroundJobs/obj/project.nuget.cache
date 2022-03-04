@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qkoacrVwamLHKZ54WnbaBaRbjt0z4bw0owlNv1oUtYJbKnQgT9D67N5i0zGnuCjmNveXa90cIu4hSXjXlt6bNA==",
+  "dgSpecHash": "bmmsO+ryMHUd2o96lB7O1TvGmwInAtQMu8+mSIotK2kW4V7fHVfBEcCFSZTMVP1ENMXaSyOgS4pNUJe42Ow3qg==",
   "success": true,
-  "projectFilePath": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\BackgroundJobs\\BackgroundJobs.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\BackgroundJobs\\BackgroundJobs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.6\\fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4m4NbVscn20cE0CTTNO/i4Np9/RO3xae7Cv/tP6p8G4REpQh/rqH42JmY/wri8gD5Ln503i8M3ap9MXB+tdmMQ==",
+  "dgSpecHash": "YYhNL2RoYhvO1Vy2BaFYW/17vL/1EXZQQ7DrAHLJsKbTDwXWvht7f2KQ3DLK6kzv5BEWyHDMm+Fy7W282VSt5Q==",
   "success": true,
-  "projectFilePath": "D:\\MERT\\Coding\\.NET CORE\\Github\\CompanyPanel\\CompanyPanelUI\\CompanyPanelUI.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\Company-Support-Manangment-System-main\\CompanyPanelUI\\CompanyPanelUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.6\\fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",

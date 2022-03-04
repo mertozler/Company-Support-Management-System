@@ -70,3 +70,15 @@ D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
 D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
 D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
 D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+C:\Users\Acer\Desktop\Company-Support-Manangment-System-main\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll

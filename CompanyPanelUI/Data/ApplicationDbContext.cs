@@ -52,9 +52,9 @@ namespace CompanyPanelUI.Data
                 NormalizedEmail = "ADMIN@GMAIL.COM",
                 EmailConfirmed = true,
                 NameSurname = "Sistem Yöneticisi",
-                PasswordHash = "AQAAAAEAACcQAAAAEBaA5EMstOiPliZR3Whk+8FaW5S25TK7r1dN1fjdCLwLNLfAfBSixQKhDMiYadQeOQ==",
-                SecurityStamp = "O4JPUURPA3NEWQ5IR2RPDHEO7WLZYBWV",
-                ConcurrencyStamp = "773338ee-7657-421d-b718-e919e7633ede"
+                PasswordHash = "AQAAAAEAACcQAAAAEBnB8oXphFdmCsywKjHsM1T0Rqoy+MUE/X6BTKXc92U7kCDqn3k8JwfkAyO3GjGfuA==",
+                SecurityStamp = "G4UWDNIBHRMGKMISDT73JLS7P3EBZMRV",
+                ConcurrencyStamp = "15142b86-2dd6-4e0a-8731-0af709f5c26b"
             });
             // Add the user to the admin role
             builder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>

@@ -1,7 +1,7 @@
 # Company Support Manangment System
  
 
-CompanyPanel was developed with .NET 5.0. N-Tier architectural structure was used in the project. The project was developed within the scope of the <a href="https://egebarkod.com/">EGEBARKOD</a> internship project. The project performs integration processes for companies.
+Company Support Manangment System was developed with .NET 5.0. N-Tier architectural structure was used in the project. The project was developed within the scope of the <a href="https://egebarkod.com/">EGEBARKOD</a> internship project. The project performs integration processes for companies.
 
 ## Features
 

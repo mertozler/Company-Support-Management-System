@@ -40,7 +40,7 @@ namespace CompanyPanelUI.Data
             if (!_context.Users.Any(u => u.UserName == user.UserName))
             {
                 var password = new PasswordHasher<CustomUser>();
-                var hashed = password.HashPassword(user, "123456Admin.");
+                var hashed = password.HashPassword(user, "123Mer.");
                 user.PasswordHash = hashed;
                 var userStore = new UserStore<CustomUser>(_context);
                 await userStore.CreateAsync(user);

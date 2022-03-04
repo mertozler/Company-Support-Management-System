@@ -25,6 +25,13 @@ $ cd .\DataAccessLayer\
 $ dotnet ef database update
 ```
 
+## How Can I Use?
+The project consists of 3 parts. Admin, Customer and Staff. The admin does the basics to manage the project, the customers create the requests, and the staff deal with the requests sent by the customers. The system administrator is defined by default in the project. You can use the information below to log in.
+
+```sh
+MAIL: admin@gmail.com
+PASSWORD: 123Mer.
+```
 
 ## License
 

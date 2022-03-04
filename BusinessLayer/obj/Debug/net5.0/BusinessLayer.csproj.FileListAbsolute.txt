@@ -65,4 +65,38 @@ D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BusinessLayer\obj\Debug\net5.0\Busi
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
-D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BusinessLayer\bin\Debug\net5.0\ref\BusinessLayer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BusinessLayer\obj\Debug\net5.0\refint\BusinessLayer.dll
+D:\teslimyedeği\CompanyPanel\BusinessLayer\bin\Debug\net5.0\BusinessLayer.deps.json
+D:\teslimyedeği\CompanyPanel\BusinessLayer\bin\Debug\net5.0\BusinessLayer.dll
+D:\teslimyedeği\CompanyPanel\BusinessLayer\bin\Debug\net5.0\BusinessLayer.pdb
+D:\teslimyedeği\CompanyPanel\BusinessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+D:\teslimyedeği\CompanyPanel\BusinessLayer\bin\Debug\net5.0\EntityLayer.dll
+D:\teslimyedeği\CompanyPanel\BusinessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\teslimyedeği\CompanyPanel\BusinessLayer\bin\Debug\net5.0\EntityLayer.pdb
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.AssemblyReference.cache
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfoInputs.cache
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfo.cs
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CopyComplete
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\refint\BusinessLayer.dll
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
+D:\teslimyedeği\CompanyPanel\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
+D:\CompanyPanel\BusinessLayer\bin\Debug\net5.0\BusinessLayer.deps.json
+D:\CompanyPanel\BusinessLayer\bin\Debug\net5.0\BusinessLayer.dll
+D:\CompanyPanel\BusinessLayer\bin\Debug\net5.0\BusinessLayer.pdb
+D:\CompanyPanel\BusinessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+D:\CompanyPanel\BusinessLayer\bin\Debug\net5.0\EntityLayer.dll
+D:\CompanyPanel\BusinessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\CompanyPanel\BusinessLayer\bin\Debug\net5.0\EntityLayer.pdb
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.AssemblyReference.cache
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfoInputs.cache
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfo.cs
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CopyComplete
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
+D:\CompanyPanel\BusinessLayer\obj\Debug\net5.0\refint\BusinessLayer.dll

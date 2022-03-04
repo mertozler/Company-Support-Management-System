@@ -5,6 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<br/>
 <div class="card card-primary">
   <div class="card-header">
     <h3 class="card-title">Hizmet Kaydı</h3>
@@ -15,14 +16,31 @@
     <div class="card-body">
       <div class="form-group">
         <label for="exampleInputEmail1">Hizmet Adı</label>
-        <input type="text" asp-for="ServiceName" class="form-control" id="ServiceName"  name="ServiceName" placeholder="Servis Adı">
+        <input type="text" asp-for="ServiceName" class="form-control" id="ServiceName"  name="ServiceName" placeholder="Servis Adı" required>
         @Html.ValidationMessageFor(x=>x.ServiceName)
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Hizmet Açıklaması</label>
-        <input type="text" asp-for="ServiceAbout" class="form-control" id="ServiceAbout"  name="ServiceAbout" placeholder="Servis Açıklaması">
+        <input type="text" asp-for="ServiceAbout" class="form-control" id="ServiceAbout"  name="ServiceAbout" placeholder="Servis Açıklaması" required>
         @Html.ValidationMessageFor(x=>x.ServiceAbout)
       </div>
+      <div class="form-group">
+                      <label for="exampleInputEmail1">Bölümler</label>
+          <select name="serviceId" id="serviceId" asp-for="departmentId">
+              @foreach (var item in Model.Departments)
+              {
+                  <div class="form-check">
+                      <input class="form-check-input" asp-for="departmentId" type="radio" name="departmentId" value="@item.DepartmentId" id="flexRadioDefault1" required>
+                      <label class="form-check-label" for="flexRadioDefault1">
+                          @item.DepartmentName
+                      </label>
+                  </div>
+              }
+          </select>
+          @Html.ValidationMessageFor(x=>x.departmentId)
+      
+      
+                  </div>
     </div>
     <!-- /.card-body -->
 

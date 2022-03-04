@@ -1,13 +1,13 @@
 ﻿@using EntityLayer.Concrete
 
-@model List<Service>
+@model CompanyPanelUI.Models.ServiceListViewModel.ServiceListViewModel
 
 @{
     ViewData["Title"] = "ServiceList";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@if (Model.Any())
+@if (Model.ServiceListClasses.Any())
 {
     <div class="card card-primary">
         <div class="card-header">
@@ -24,17 +24,20 @@
                             <th style="width: 10px">#</th>
                             <th>Hizmet Adı</th>
                             <th>Hizmet Açıklaması</th>
+                            <th>Hizmet Bölümü</th>
                             <th>Hizmet Ayarları</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model)
+                        @foreach (var item in Model.ServiceListClasses)
                         {
                             <tr>
 
                                 <td>@item.ServiceId</td>
                                 <td>@item.ServiceName</td>
                                 <td>@item.ServiceAbout</td>
+                                <td>@item.DepartmentName</td>
+                                
                                 <td>
                                     <a href="/Admin/EditService/@item.ServiceId" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
                                     <a href="/Admin/DeleteService/@item.ServiceId" class="btn btn-warning btn-sm" onclick="return confirm('@item.ServiceName isimli hizmeti silmek istediğinden emin misin? Bu hizmetin tanımlı olduğu firmalar olabilir ve eğer silerseniz tanımlı hizmet firmalardan silinecektir. Bu sorumluluğu kabul ediyor musunuz?')"><i class="fas fa-trash"></i></a>

@@ -11,7 +11,7 @@
     ViewData["Title"] = "DemandAnswer";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<br/>
 <div class="col-md-12">
                 <div class="card direct-chat direct-chat-warning">
                   <div class="card-header">
@@ -21,42 +21,69 @@
                     }
                   </div>
                   <!-- /.card-header -->
-                          @foreach(var item in Model.DemandAndAnswerWmList)
+                     
+                  <div class="card-body" style="height: 400px; overflow-y: scroll; padding: 15px;">
+                    
+                    @foreach (var item in Model.DemandAndAnswerWmList)
                     {
-                  <div class="card-body">
-                    <!-- Conversations are loaded here -->
-                    <div class="direct-chat-messages">
-                      <!-- Message. Default to the left -->
-                      <div class="direct-chat-msg">
-                        <div class="direct-chat-infos clearfix">
-                          <span class="direct-chat-name float-left">@item.UserName</span>
-                          <span class="direct-chat-timestamp float-right">@item.DemantCreateDate</span>
+                      <!-- Conversations are loaded here -->
+                      <div class="direct-chat-danger">
+                        <!-- Message. Default to the left -->
+                        <div class="green">
+                          <div class="direct-chat-infos clearfix">
+                            <span class="direct-chat-name float-left">@item.UserName</span>
+                            <span class="direct-chat-timestamp float-right">@(((DateTime) item.DemantCreateDate).ToString("dd.MM.yyyy"))</span>
+                          </div>
+                          <img class="direct-chat-img" src="~/dist/img/avatar5.png" alt="message user image">
+                          <div class="direct-chat-text">
+                            @Html.Raw(item.DemandContent)
+                          </div>
+                          <!-- /.direct-chat-text -->
                         </div>
-                        
-                        <div class="direct-chat-text">
-                          @item.DemandContent
-                        </div>
-                        <!-- /.direct-chat-text -->
                       </div>
-                    </div>
-            </div>
 
-            if(item.DemandAnswer!=null)
-            {
-                <div class="direct-chat-msg right">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-right">Sistem Yöneticisi</span>
-                      <span class="direct-chat-timestamp float-left">@item.DemandAnswerDate</span>
-                    </div>
-                    <div class="direct-chat-text">
-                      @item.DemandAnswer
-                    </div>
-                    <!-- /.direct-chat-text -->
+
+                      if (item.DemandAnswer != null)
+                      {
+                        foreach (var demandChat in item.DemandAnswer)
+                        {
+                          if (demandChat.DemandAnswerType == 1)
+                          {
+                            <div class="direct-chat-msg">
+                              <div class="direct-chat-infos clearfix">
+                                <span class="direct-chat-name float-left">@item.UserName</span>
+                                <span class="direct-chat-timestamp float-right">@(((DateTime) demandChat.DemandAnswerDate).ToString("dd.MM.yyyy"))</span>
+                              </div>
+                              <img class="direct-chat-img" src="~/dist/img/avatar5.png" alt="message user image">
+                              <div class="direct-chat-text">
+                                @demandChat.Answer
+                              </div>
+                              <!-- /.direct-chat-text -->
+                            </div>
+                          }
+                          else if (demandChat.DemandAnswerType == 2)
+                          {
+                            <div class="direct-chat-msg right">
+                              <div class="direct-chat-infos clearfix">
+                                <span class="direct-chat-name float-right">Sistem Yöneticisi</span>
+                                <span class="direct-chat-timestamp float-left">@(((DateTime) demandChat.DemandAnswerDate).ToString("dd.MM.yyyy"))</span>
+                              </div>
+                              <img class="direct-chat-img" src="~/dist/img/avatar4.png" alt="message user image">
+                              <div class="direct-chat-text">
+                                @demandChat.Answer
+                              </div>
+                              <!-- /.direct-chat-text -->
+                            </div>
+                          }
+
+                        }
+
+                      }
+                    }
                   </div>
-            }
                 
                 <!-- /.card-body -->
-                    }
+                    
                     @foreach (var item in Model.DemandAndAnswerWmList)
         {
             

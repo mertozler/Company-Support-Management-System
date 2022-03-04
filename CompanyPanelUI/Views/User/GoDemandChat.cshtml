@@ -4,15 +4,14 @@
 
 @inject UserManager<CustomUser> UserManager
 @using CompanyPanelUI.Models.UserListViewModel
-
+@model DemandReplyViewModel
 @{
     ViewData["Title"] = "GoDemandChat";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-<br />
-
+<br/>
 <div class="col-md-12">
                 <div class="card direct-chat direct-chat-warning">
                   <div class="card-header">
@@ -20,56 +19,110 @@
                     {
                     <h3 class="card-title">Talep No: @item.DemandId | @item.DemandTitle</h3>
                     }
+                      
+                       <div class="card-tools">
+                              
+                              <div class="btn-group show">
+                                <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                  Talep Ayarları
+                                  <i class="fas fa-wrench"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right show" role="menu" style="position: absolute; transform: translate3d(-123px, 19px, 0px); top: 0px; left: 0px; will-change: transform;" x-placement="bottom-end">
+                                  <a href="/User/ChangeDemandStatus/@Model.DemandAndAnswerWmList[0].DemandId" class="dropdown-item">Talebi Kapat</a>
+                                </div>
+                              </div>
+                              </div>
                   </div>
                   <!-- /.card-header -->
-                          @foreach(var item in Model.DemandAndAnswerWmList)
+                     
+                  <div class="card-body" style="height: 400px; overflow-y: scroll; padding: 15px;">
+                    
+                    @foreach (var item in Model.DemandAndAnswerWmList)
                     {
+                      <!-- Conversations are loaded here -->
+                      <div class="direct-chat-infos clearfix">
+                        <!-- Message. Default to the left -->
                         <div class="direct-chat-msg right">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-right">@item.UserName</span>
-                      <span class="direct-chat-timestamp float-left">@item.DemandAnswerDate</span>
-                    </div>
-                    <div class="direct-chat-text">
-                      @item.DemandContent
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-
-                 
-
-            if(item.DemandAnswer!=null)
-            {
-                <div class="card-body">
-                    <!-- Conversations are loaded here -->
-                    <div class="direct-chat-messages">
-                      <!-- Message. Default to the left -->
-                      <div class="direct-chat-msg">
-                        <div class="direct-chat-infos clearfix">
-                          <span class="direct-chat-name float-left">Sistem Yöneticisi</span>
-                          <span class="direct-chat-timestamp float-right">@item.DemandAnswerDate</span>
+                          <div class="direct-chat-infos clearfix">
+                            <span class="direct-chat-name float-left">@item.UserName</span>
+                            <span class="direct-chat-timestamp float-right">@(((DateTime) item.DemantCreateDate).ToString("dd.MM.yyyy"))</span>
+                          </div>
+                          <img class="direct-chat-img" src="~/dist/img/avatar5.png" alt="message user image">
+                          <div class="direct-chat-text">
+                            @Html.Raw(item.DemandContent)
+                          </div>
+                          @if (item.DemandReadStatus == null)
+                          {
+                            <span margin-right="10" class="bg-danger">Okunmadı</span>
+                          }
+                          else
+                          {
+                            <span margin-right="10" class="bg-success">Talep şu tarihte görüntülendi: @(((DateTime) item.DemandReadStatus).ToString())</span>
+                          }
+                          
+                          <!-- /.direct-chat-text -->
                         </div>
-                        
-                        <div class="direct-chat-text">
-                          @item.DemandAnswer
-                        </div>
-                        <!-- /.direct-chat-text -->
                       </div>
-                    </div>
-            </div>
-
-            }
 
 
+                      if (item.DemandAnswer != null)
+                      {
+                        foreach (var demandChat in item.DemandAnswer)
+                        {
+                          if (demandChat.DemandAnswerType == 1)
+                          {
+                            <div class="direct-chat-msg right">
+                              <div class="direct-chat-infos clearfix">
+                                <span class="direct-chat-name float-left">@item.UserName</span>
+                                <span class="direct-chat-timestamp float-right">@(((DateTime) demandChat.DemandAnswerDate).ToString("dd.MM.yyyy"))</span>
+                              </div>
+                              <img class="direct-chat-img" src="~/dist/img/avatar5.png" alt="message user image">
+                              <div class="direct-chat-text">
+                                @demandChat.Answer
+                              </div>
+                              <!-- /.direct-chat-text -->
+                            </div>
+                          }
+                          else if (demandChat.DemandAnswerType == 2)
+                          {
+                            <div class="direct-chat-msg">
+                              <div class="direct-chat-infos clearfix">
+                                <span class="direct-chat-name float-right">Sistem Yöneticisi</span>
+                                <span class="direct-chat-timestamp float-left">@(((DateTime) demandChat.DemandAnswerDate).ToString("dd.MM.yyyy"))</span>
+                              </div>
+                              <img class="direct-chat-img" src="~/dist/img/avatar4.png" alt="message user image">
+                              <div class="direct-chat-text">
+                                @demandChat.Answer
+                              </div>
+                              <!-- /.direct-chat-text -->
+                            </div>
+                          }
+
+                        }
+
+                      }
+                    }
+                  </div>
                 
                 <!-- /.card-body -->
-                    }
+                    
                     @foreach (var item in Model.DemandAndAnswerWmList)
         {
             
-        <!--/.direct-chat-messages-->
+        
         }
                   
-
+        <div class="card-footer">
+                            <form asp-action="GoDemandChat" method="post" asp-controller="User">
+                              <div class="input-group">
+                            <input type="text" name="DemandAnswerNew" asp-for="DemandAnswerNew" class="form-control" id="DemandAnswerNew"  placeholder="Cevap yaz..">
+                            <input type="hidden" name="DemandIdNew" asp-for="DemandIdNew" value="@ViewBag.id" />
+                                <span class="input-group-append">
+                                  <button type="submit" class="btn btn-warning">Talep Yanıtla</button>
+                                </span>
+                              </div>
+                            </form>
+                          </div>
                   <!-- /.card-footer-->
                 </div>
                 <!--/.direct-chat -->

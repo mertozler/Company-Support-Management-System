@@ -28,11 +28,18 @@
                         </div>
                         <div class="col-sm">
                             <h3>Talep Durumu Seçin</h3>
-                                
-                            <label for="vehicle1">Aktif Talepler</label><br>
-                            <input type="checkbox" asp-for="CevaplanmamisTalep" class="form-control" id="CevaplanmamisTalep"  name="CevaplanmamisTalep" >
-                            <label for="vehicle1">Kapatılan Talepler</label><br>
-                            <input type="checkbox" asp-for="Yanitlanmistalep" class="form-control" id="Yanitlanmistalep"  name="Yanitlanmistalep">
+                                                         <div class="form-check">
+                                                             <input class="form-check-input" asp-for="CevaplanmamisTalep"  name="CevaplanmamisTalep" type="checkbox" id="CevaplanmamisTalep">
+                                                             <label class="form-check-label" for="flexCheckDefault">
+                                                                 Aktif Talepler
+                                                             </label>
+                                                         </div>
+                                                         <div class="form-check">
+                                                                                       <input class="form-check-input" asp-for="Yanitlanmistalep" type="checkbox"  id="Yanitlanmistalep"  name="Yanitlanmistalep" >
+                                                                                       <label class="form-check-label" for="flexCheckDefault">
+                                                                                         Kapatılan Talepler
+                                                                                       </label>
+                                                                                     </div>
                         </div>
                         <div class="col-sm">
                             <h3>Hizmet Seçin</h3>
@@ -121,22 +128,22 @@ line-height: 8px;
                             </td>
                         }
                         <td>
-                            @item.DemandContent.Substring(0,20) ...
+                            @Html.Raw(item.DemandContent.Substring(0,20)) ...
                         </td><td>
                             @(((DateTime)item.DemandCreateTime).ToString("dd.MM.yyyy"))
                        
                         </td>
                         @if (item.DemandStatus == true)
-                        {
-                            <td class="bg-danger">
-                                Cevaplanmamış
-                            </td>
-                                
-                        }else{
-                            <td class="bg-success">
-                                Yanıtlanmış
-                            </td>
-                        }
+                                                                                            {
+                                                                                                <td class="bg-success">
+                                                                                                    Aktif
+                                                                                                </td>
+                                                                                                                                                                                                    
+                                                                                            }else{
+                                                                                                <td class="bg-danger">
+                                                                                                    Pasif
+                                                                                                </td>
+                                                                                            }
 
                         <td>
                             <a href="/User/GoDemandChat/@item.DemandId"><span class="badge bg-danger">Talep Görüntüle</span></a>

@@ -1,0 +1,96 @@
+﻿@model IPagedList<EntityLayer.Concrete.Logs>
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<br>
+
+@if (Model.Count != 0)
+{
+    
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Loglar</h3>
+        </div>
+
+        <br />
+        <div class="card">
+            
+            <div class="card-body">
+                <table class="table table-bordered" style=" table-layout:fixed;
+                                                               width:100%;">
+                    <thead>
+                    <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Log Mesajı</th>
+                        <th>Log Leveli</th>
+                        <th>Log Tarihi</th>
+                        <th>Log Hata</th>
+                        <th>Özellikleri</th>
+                        <th>Log Ayrıntıları</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>@item.Id</td>
+                            <td>@item.Message</td>
+                            @if (item.Level == "Warning")
+                            {
+                                <td class="bg-warning">@item.Level</td>
+                            }else if (item.Level == "Error")
+                            {
+                                <td class="bg-gradient-danger">@item.Level</td>
+                            }
+                            else if (item.Level == "Fatal")
+                            {
+                                <td class="bg-danger">@item.Level</td>
+                            }
+                                
+                            <td>@item.TimeStamp</td>
+                            @if (item.Exception != null)
+                            {
+                                <td>@item.Exception.Substring(0, 30) ..</td>
+                            }
+                            else
+                            {
+                                <td>Hata kaydı yoktur</td>
+                            }
+                                
+                            <td>@item.Properties.Substring(0,30) ..</td>
+                               
+                                
+                            <td><a href="/Admin/LogDetails/@item.Id"><span class="badge bg-danger">Log Detayları</span></a></td>
+
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+                <br/>
+                    
+                    @Html.PagedListPager((IPagedList)Model,page=> Url.Action("LogList",new {page }),
+                        new PagedListRenderOptions {
+                            LiElementClasses = new string[] { "page-item" },
+                            PageClasses = new string[] { "page-link" }
+                        })
+            </div>
+
+
+        </div>
+    </div>
+    
+    
+
+
+}
+else
+{
+    <p>Log kaydı bulunmamaktadır.</p>
+}

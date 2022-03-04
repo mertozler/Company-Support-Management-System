@@ -19,6 +19,70 @@ namespace DataAccessLayer.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
+            modelBuilder.Entity("EntityLayer.Concrete.CustomUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ApplicationFirm")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("DepartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("FirmId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NameSurname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CustomUser", t => t.ExcludeFromMigrations());
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Demand", b =>
                 {
                     b.Property<int>("DemandId")
@@ -32,11 +96,17 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("DemandCreateTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DemandReadTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("DemandStatus")
                         .HasColumnType("bit");
 
                     b.Property<string>("DemandTitle")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
 
                     b.Property<int>("ServiceId")
                         .HasColumnType("int");
@@ -45,6 +115,8 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DemandId");
+
+                    b.HasIndex("DepartmentId");
 
                     b.HasIndex("ServiceId");
 
@@ -63,6 +135,9 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<DateTime>("DemandAnswerDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("DemandAnswerType")
+                        .HasColumnType("int");
 
                     b.Property<int>("DemandId")
                         .HasColumnType("int");
@@ -94,6 +169,100 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("DemandFiles");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Department", b =>
+                {
+                    b.Property<int>("DepartmentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("DepartmentAbout")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DepartmentName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("DepartmentisDefault")
+                        .HasColumnType("bit");
+
+                    b.HasKey("DepartmentId");
+
+                    b.ToTable("Departments");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.DepartmentEmployee", b =>
+                {
+                    b.Property<int>("DepartmentEmployeeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("DepartmentEmployeeId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("DepartmentEmployees");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.EmployeeDemand", b =>
+                {
+                    b.Property<int>("EmployeeDemandId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DemandId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EmployeeId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("EmployeeDemandId");
+
+                    b.HasIndex("DemandId");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("EmployeeDemands");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.EmployeeService", b =>
+                {
+                    b.Property<int>("EmployeeServicesId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ServiceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("EmployeeServicesId");
+
+                    b.HasIndex("ServiceId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("EmployeeServices");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Firm", b =>
                 {
                     b.Property<int>("FirmId")
@@ -110,8 +279,8 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("FirmStatus")
                         .HasColumnType("bit");
 
-                    b.Property<int>("FirmTaxNo")
-                        .HasColumnType("int");
+                    b.Property<string>("FirmTaxNo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirmTelNo")
                         .HasColumnType("nvarchar(max)");
@@ -131,6 +300,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<int>("FirmId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("FirmServiceCreateDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("ServiceId")
                         .HasColumnType("int");
 
@@ -141,6 +313,36 @@ namespace DataAccessLayer.Migrations
                     b.HasIndex("ServiceId");
 
                     b.ToTable("FirmServices");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Logs", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Exception")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Level")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MessageTemplate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Properties")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("TimeStamp")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Logs");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Service", b =>
@@ -159,6 +361,54 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("ServiceId");
 
                     b.ToTable("Services");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.ServiceDepartment", b =>
+                {
+                    b.Property<int>("ServiceDepartmentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ServiceId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ServiceDepartmentId");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("ServiceId");
+
+                    b.ToTable("ServiceDepartments");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Setting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("SettingName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SettingValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            SettingName = "DeleteLogFilterByDay",
+                            SettingValue = "2"
+                        });
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.User", b =>
@@ -190,13 +440,21 @@ namespace DataAccessLayer.Migrations
 
             modelBuilder.Entity("EntityLayer.Concrete.Demand", b =>
                 {
-                    b.HasOne("EntityLayer.Concrete.Service", "service")
+                    b.HasOne("EntityLayer.Concrete.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.Service", "Service")
                         .WithMany()
                         .HasForeignKey("ServiceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("service");
+                    b.Navigation("Department");
+
+                    b.Navigation("Service");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.DemandAnswer", b =>
@@ -221,6 +479,49 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Demand");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.DepartmentEmployee", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.CustomUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.EmployeeDemand", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Demand", "Demand")
+                        .WithMany()
+                        .HasForeignKey("DemandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.CustomUser", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId");
+
+                    b.Navigation("Demand");
+
+                    b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.EmployeeService", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Service", "Services")
+                        .WithMany()
+                        .HasForeignKey("ServiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.CustomUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Services");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.FirmService", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.Firm", "Firm")
@@ -236,6 +537,25 @@ namespace DataAccessLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("Firm");
+
+                    b.Navigation("Service");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.ServiceDepartment", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.Service", "Service")
+                        .WithMany()
+                        .HasForeignKey("ServiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Department");
 
                     b.Navigation("Service");
                 });

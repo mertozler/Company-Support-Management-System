@@ -1,0 +1,57 @@
+﻿@model CompanyPanelUI.Models.EmployeeDemandAssignmentViewModel.EmployeeDemandAssignmentViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Talebi Bir Personele Ata</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start --> 
+            
+    <div class="card-body">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Talep Başlığı</label>
+            <input type="text"  class="form-control" id="ServiceAbout"  name="ServiceAbout"  placeholder="@Model.Demand[0].DemandTitle" readonly>
+                                  
+        </div>
+        <div class="form-group">
+
+            <label for="exampleInputEmail1">Talep İçeriği </label>
+            <input type="text" class="form-control" id="ServiceName" name="ServiceName" placeholder="@Model.Demand[0].DemandContent" readonly>
+
+        </div>
+        
+        
+        <form id="make_checkbox_select" asp-action="EmployeeDemandAssignment" method="post" asp-controller="Employee">
+            
+            <div class="form-group">
+                <label for="exampleInputEmail1">Personeller</label>
+                <select name="employeeId" id="employeeId" asp-for="employeeId">
+                    @foreach (var item in Model.Employees)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" asp-for="employeeId" type="radio" name="employeeId" value="@item.Id" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                @item.NameSurname
+                            </label>
+                        </div>
+                    }
+                </select>
+
+
+
+
+
+            </div>
+            <!-- /.card-body -->
+            <input type="hidden" asp-for="demandId" name="demandId" value="@Model.Demand[0].DemandId" />
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Değiştir</button>
+            </div>
+        </form>
+    </div>
+</div>

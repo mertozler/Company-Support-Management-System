@@ -20,11 +20,63 @@
     
 }
 
+else if (kullaniciRolleri[0] == "personel")
+{
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="/Employee/Index" class="brand-link">
+
+            <span class="brand-text font-weight-light">Company Panel</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+
+                <div class="info">
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <a href="#" class="d-block">Hoşgeldin @girisYapanKullanici.NameSurname</a>
+                    }
+                    else
+                    {
+                        <a href="#" class="d-block"></a>
+                    }
+                </div>
+            </div>
+            <!-- Main Sidebar Container -->
+
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    
+                    <li class="nav-item">
+                        <a href="/Employee/DemandList" class="nav-link">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Talepler
+
+                            </p>
+                        </a>
+                    </li>
+
+                
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+}
+
+
 else if (kullaniciRolleri[0] == "musteri")
 {
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/Admin/Index" class="brand-link">
+    <a href="/User/Index" class="brand-link">
 
         <span class="brand-text font-weight-light">Company Panel</span>
     </a>
@@ -104,7 +156,7 @@ else if (kullaniciRolleri[0] == "admin")
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                 
-                <li class="nav-item menu-is-opening menu-open">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
@@ -112,7 +164,7 @@ else if (kullaniciRolleri[0] == "admin")
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
-                    <ul class="nav nav-treeview" style="display: block;">
+                    <ul class="nav nav-treeview" style="display: none;">
                         <li class="nav-item">
                             <a href="/Admin/Firms" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -122,7 +174,7 @@ else if (kullaniciRolleri[0] == "admin")
 
                     </ul>
 
-                    <ul class="nav nav-treeview" style="display: block;">
+                    <ul class="nav nav-treeview" style="display: none;">
                         <li class="nav-item">
                             <a href="/Admin/FirmList" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -132,30 +184,69 @@ else if (kullaniciRolleri[0] == "admin")
 
                     </ul>
                 </li>
+                
+                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-book"></i>
+                                        <p>
+                                            Personeller
+                                            <i class="fas fa-angle-left right"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview" style="display: none;">
+                                        <li class="nav-item">
+                                            <a href="/Admin/CreateEmployee" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Personel Oluştur</p>
+                                            </a>
+                                        </li>
+                
+                                    </ul>
+                
+                    <ul class="nav nav-treeview" style="display: none;">
+                        <li class="nav-item">
+                            <a href="/Admin/EmployeeList" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Personel Listesi</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                     <ul class="nav nav-treeview" style="display: none;">
+                                                            <li class="nav-item">
+                                                                <a href="/Admin/DefineDepartmentForEmployee" class="nav-link">
+                                                                    <i class="far fa-circle nav-icon"></i>
+                                                                    <p>Personel Tanımla</p>
+                                                                </a>
+                                                            </li>
+                                    
+                                                        </ul>
+                                </li>
+                
 
-                <li class="nav-item menu-is-opening menu-open">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tree"></i>
                         <p>
-                            Kullanıcılar
+                            Müşteriler
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
-                    <ul class="nav nav-treeview" style="display: block;">
+                    <ul class="nav nav-treeview" style="display: none;">
                         <li class="nav-item">
                             <a href="/Admin/UserApplicationConfirm" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Kullanıcı Kayıt Onayla</p>
+                                <p>Müşteri Kayıt Onayla</p>
                             </a>
                         </li>
 
                     </ul>
 
-                    <ul class="nav nav-treeview" style="display: block;">
+                    <ul class="nav nav-treeview" style="display: none;">
                         <li class="nav-item">
                             <a href="/Admin/UserList" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Kullanıcı Listesi</p>
+                                <p>Müşteri Listesi</p>
                             </a>
                         </li>
 
@@ -164,15 +255,15 @@ else if (kullaniciRolleri[0] == "admin")
 
 
 
-                <li class="nav-item menu-is-opening menu-open">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-tree"></i>
+                        <i class="nav-icon far fa-plus-square"></i>
                         <p>
                             Hizmetler
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
-                    <ul class="nav nav-treeview" style="display: block;">
+                    <ul class="nav nav-treeview" style="display: none;">
                         <li class="nav-item">
                             <a href="/Admin/CreateService" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -182,7 +273,7 @@ else if (kullaniciRolleri[0] == "admin")
 
                     </ul>
 
-                    <ul class="nav nav-treeview" style="display: block;">
+                    <ul class="nav nav-treeview" style="display: none;">
                         <li class="nav-item">
                             <a href="/Admin/ServiceDefine" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -192,7 +283,7 @@ else if (kullaniciRolleri[0] == "admin")
 
                     </ul>
 
-                    <ul class="nav nav-treeview" style="display: block;">
+                    <ul class="nav nav-treeview" style="display: none;">
                         <li class="nav-item">
                             <a href="/Admin/ServiceList" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -202,6 +293,37 @@ else if (kullaniciRolleri[0] == "admin")
 
                     </ul>
                 </li>
+                
+                
+                
+                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-columns"></i>
+                                        <p>
+                                            Bölümler
+                                            <i class="fas fa-angle-left right"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview" style="display: none;">
+                                        <li class="nav-item">
+                                            <a href="/Admin/DepartmentAdd" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Bölüm Oluştur</p>
+                                            </a>
+                                        </li>
+                
+                                    </ul>
+                
+                                    <ul class="nav nav-treeview" style="display: none;">
+                                        <li class="nav-item">
+                                            <a href="/Admin/DepartmentList" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Bölüm Listesi</p>
+                                            </a>
+                                        </li>
+                
+                                    </ul>
+                                </li>
 
                 <li class="nav-item">
                     <a href="/Admin/DemandList" class="nav-link">
@@ -212,6 +334,25 @@ else if (kullaniciRolleri[0] == "admin")
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/Admin/LogList" class="nav-link">
+                        <i class="nav-icon fas fa-search"></i>
+                        <p>
+                            Loglar
+                
+                        </p>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                                                    <a href="/Admin/Settings" class="nav-link">
+                                                        <i class="nav-icon fas fa-solid fa-wrench"></i>
+                                                        <p>
+                                                            Ayarlar
+                                
+                                                        </p>
+                                                    </a>
+                                                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

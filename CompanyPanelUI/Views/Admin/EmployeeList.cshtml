@@ -1,0 +1,63 @@
+﻿@model CompanyPanelUI.Models.EmployeeListViewModel.EmployeeListViewModel
+@{
+    ViewBag.Title = "Employee List";
+    Layout = "_Layout";
+}
+
+@if (Model.Users !=null)
+{
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Kayıtlı Personeller</h3>
+        </div>
+
+        <br />
+        <div class="card">
+            
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Personel Adı</th>
+                            <th>Personel Maili</th>
+                            <th>Personel Telefon Numarası</th>
+                            <th>Personel Firma Atama Durumu</th>
+                            <th>Personel Ayarları</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Users)
+                        {
+                            <tr>
+
+                                <td>@item.EmployeeId</td>
+                                <td>@item.EmployeeNameSurname</td>
+                                <td>@item.EmployeeMail</td>
+                                <td>@item.EmployeePhone</td>
+                                @if (item.Firm != null)
+                                {
+                                    <td class="bg-success">@item.Firm.FirmName</td>
+                                }
+                                else
+                                {
+                                    <td class="bg-danger">Personel bir firmaya tanımlanmamıştır.</td>
+                                }
+                                
+                                <td>
+                                    <a href="/Admin/DeleteEmployee/@item.EmployeeId" class="btn btn-warning btn-sm" onclick="return confirm('@item.EmployeeNameSurname isimli personeli silmek istediğinden emin misin? Bu firmaya kayıtlı kullanıcıların hesapları silinecektir. Bu sorumluluğu kabul ediyor musunuz?')"><i class="fas fa-trash"></i></a>
+                                    
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+}

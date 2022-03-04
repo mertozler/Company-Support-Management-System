@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Serilog;
 
 namespace CompanyPanelUI
 {
@@ -13,6 +14,11 @@ namespace CompanyPanelUI
     {
         public static void Main(string[] args)
         {
+            IConfigurationRoot configurationRoot = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
+
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configurationRoot).CreateLogger();
+
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -20,7 +26,7 @@ namespace CompanyPanelUI
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>().UseSerilog();
                 });
     }
 }

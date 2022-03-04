@@ -10,7 +10,17 @@
       "ProjectGuid": "da638c7a-2ed8-4828-ad45-8047b1390a6c",
       "DisplayName": "CompanyPanelUI",
       "ColorIndex": 0
+    },
+    "7ab345fe-369f-4e70-ac2b-2d4ac5ccde1b": {
+      "ProjectGuid": "7ab345fe-369f-4e70-ac2b-2d4ac5ccde1b",
+      "DisplayName": "BackgroundJobs",
+      "ColorIndex": 1
+    },
+    "54f3dd0f-8335-45bd-95f6-27fb04480479": {
+      "ProjectGuid": "54f3dd0f-8335-45bd-95f6-27fb04480479",
+      "DisplayName": "EntityLayer",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

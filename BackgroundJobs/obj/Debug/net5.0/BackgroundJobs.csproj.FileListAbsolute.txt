@@ -1,0 +1,38 @@
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.deps.json
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.dll
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.pdb
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BusinessLayer.dll
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\DataAccessLayer.dll
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\EntityLayer.dll
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BusinessLayer.pdb
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\EntityLayer.pdb
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.AssemblyReference.cache
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.GeneratedMSBuildEditorConfig.editorconfig
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.AssemblyInfoInputs.cache
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.AssemblyInfo.cs
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.CoreCompileInputs.cache
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.CopyComplete
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.dll
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.pdb
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\ref\BackgroundJobs.dll
+D:\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\refint\BackgroundJobs.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.deps.json
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BusinessLayer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\DataAccessLayer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\EntityLayer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\BusinessLayer.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\bin\Debug\net5.0\EntityLayer.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.AssemblyReference.cache
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.GeneratedMSBuildEditorConfig.editorconfig
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.AssemblyInfoInputs.cache
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.AssemblyInfo.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.CoreCompileInputs.cache
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.CopyComplete
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\refint\BackgroundJobs.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\BackgroundJobs\obj\Debug\net5.0\ref\BackgroundJobs.dll

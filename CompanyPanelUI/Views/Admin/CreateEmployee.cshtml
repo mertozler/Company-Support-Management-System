@@ -1,0 +1,87 @@
+﻿@model CompanyPanelUI.DTOS.EmployeeRegisterModel
+
+@{
+    ViewBag.Title = "Crate Employee";
+    Layout = "_Layout";
+}
+
+<div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Personel Kaydı</h3>
+              </div>
+
+              <div class="card">
+                 
+
+                          <div class="card">
+                              <div class="card-header">
+                                  <h3 class="card-title">Personel Bilgisi</h3>
+                              </div>
+
+                              <div class="card-body">
+                                 <form id="make_checkbox_select" asp-action="CreateEmployee" method="post" asp-controller="Admin">
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Personel Adı Soyadı</label>
+                                          <input type="text" class="form-control" asp-for="NameSurname" name="NameSurname" id="NameSurname" placeholder="Personel adı giriniz.."  required>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="exampleInputPassword1">Personel Mail</label>
+                                          <input type="email" class="form-control" asp-for="Email" name="Email" id="Email" placeholder="Personel mail giriniz.."  required>
+                                          @Html.ValidationMessageFor(x=>x.Email)
+                                      </div>
+                                  <div class="form-group">
+                                      <label for="exampleInputEmail1">Personel Telefonu</label>
+                                      <input type="tel" class="form-control"  asp-for="PhoneNumber" name="PhoneNumber" id="PhoneNumber" inlength="10" maxlength="10"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Personel telefonunu giriniz.."  required>
+                                  </div>
+                                     <div class="form-group">
+                                         <label for="exampleInputEmail1">Personel Şifresi</label>
+                                         <input type="password" class="form-control"  asp-for="Password" name="Password" id="Password" placeholder="Personel şifresini giriniz.." required>
+                                         @Html.ValidationMessageFor(x=>x.Password)
+                                     </div>
+                                       <div class="card-footer">
+                                                                       <button type="submit" class="btn btn-primary">Personel Kaydı Yap</button>
+                                                                   </div>
+                                      
+</form>
+                                  
+                              </div>
+                              <!-- /.card-body -->
+
+                            
+                          </div>
+                      
+
+</div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<style>
+
+</style>
+
+
+<script>
+
+  $(function()
+  {
+    var mySelectCheckbox = new checkbox_select(
+    {
+      selector : "#make_checkbox_select",
+            selected_translation : "selectat",
+            all_translation : "Toate marcile",
+            not_found : "Nici unul gasit",
+
+      // Event during initialization
+      onApply : function(e)
+      {
+                alert("Custom Event: " + e.selected);
+      }
+    });
+  
+  });
+    
+</script>
+                            
+

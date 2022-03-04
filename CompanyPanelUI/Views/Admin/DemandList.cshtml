@@ -1,5 +1,7 @@
 ﻿@using CompanyPanelUI.Models.DemandListViewModel
 @using EntityLayer.Concrete
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<CustomUser> UserManager
 
 @model DemandListViewModel
 @{
@@ -28,11 +30,21 @@
                         </div>
                         <div class="col-sm">
                             <h3>Talep Durumu Seçin</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" asp-for="CevaplanmamisTalep"  name="CevaplanmamisTalep" type="checkbox" id="CevaplanmamisTalep">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Aktif Talepler
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                                          <input class="form-check-input" asp-for="Yanitlanmistalep" type="checkbox"  id="Yanitlanmistalep"  name="Yanitlanmistalep" >
+                                                          <label class="form-check-label" for="flexCheckDefault">
+                                                            Kapatılan Talepler
+                                                          </label>
+                                                        </div>
                                 
-                            <label for="vehicle1">Aktif Talepler</label><br>
-                            <input type="checkbox" asp-for="CevaplanmamisTalep" class="form-control" id="CevaplanmamisTalep"  name="CevaplanmamisTalep" >
-                            <label for="vehicle1">Kapatılan Talepler</label><br>
-                            <input type="checkbox" asp-for="Yanitlanmistalep" class="form-control" id="Yanitlanmistalep"  name="Yanitlanmistalep">
+                            
+                            
                         </div>
                         <div class="col-sm">
                             <h3>Hizmet Seçin</h3>
@@ -87,7 +99,10 @@
                     <tr>
                            
                         <td>@item.DemandId</td>
-                        <td>@item.UserId</td>
+                        @{
+                            var currentUserName =  UserManager.FindByIdAsync(item.UserId).Result.NameSurname;
+                        }
+                        <td>@currentUserName</td>
                         @if(item.DemandTitle.Length >=30)
                         {
                             <td>@item.DemandTitle.Substring(0,30) ..</td>
@@ -98,22 +113,22 @@
                         }
 
                        
-                        <td> @item.DemandContent.Substring(0,20) ...</td>
+                        <td> @Html.Raw(item.DemandContent.Substring(0,20)) ...</td>
                         <td>
                             @(((DateTime)item.DemandCreateTime).ToString("dd.MM.yyyy"))
                        
                         </td>
-                        @if (item.DemandStatus == true)
-                        {
-                            <td class="bg-danger">
-                                Cevaplanmamış
-                            </td>
-                                
-                        }else{
-                            <td class="bg-success">
-                                Yanıtlanmış
-                            </td>
-                        }
+                         @if (item.DemandStatus == true)
+                                                                    {
+                                                                        <td class="bg-success">
+                                                                            Aktif
+                                                                        </td>
+                                                                                                                                                                            
+                                                                    }else{
+                                                                        <td class="bg-danger">
+                                                                            Pasif
+                                                                        </td>
+                                                                    }
 
                         <td>
                             <a href="/Admin/DemandAnswerUser/@item.DemandId"><span class="badge bg-danger">Talep Yanıtla</span></a>

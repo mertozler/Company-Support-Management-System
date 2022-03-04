@@ -1,0 +1,66 @@
+﻿@model System.Collections.Generic.List<EntityLayer.Concrete.Setting>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<br/>
+@if (Model.Count != 0)
+{
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Kayıtlı Ayarlar</h3>
+        </div>
+
+        <br />
+        <div class="card">
+            
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Ayar Adı</th>
+                            <th>Ayar Değeri</th>
+                            <th>Ayarı Düzenle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>@item.Id</td>
+                                <td>@item.SettingName</td>
+                                @if (item.SettingValue != null)
+                                {
+                                    <td>@item.SettingValue</td>
+                                }
+                                else
+                                {
+                                    <td class="bg-danger">Ayar değeri henüz yoktur, lütfen tanımlayınız</td>
+                                }
+                                
+                                
+                                <td>
+                                    <a href="/Admin/EditSettings/@item.Id" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                                </td>
+                                
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+}
+else
+{
+    <p>Departman kaydı bulunmamaktadır.</p>
+}

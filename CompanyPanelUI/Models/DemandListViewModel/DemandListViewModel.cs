@@ -11,8 +11,12 @@ namespace CompanyPanelUI.Models.DemandListViewModel
         public bool CevaplanmamisTalep { get; set; }
         public bool Yanitlanmistalep { get; set; }
         public int? ServiceId { get; set; }
+        
         public List<Service> Services { get; set; }
         public List<Demand> Demands { get; set; }
+        public List<Demand> DemandAssignedForUser { get; set; }
+        public List<Demand> DemandDepartmentForUser { get; set; }
+        public List<Demand> DemandServicesForUser { get; set; }
 
     }
 }

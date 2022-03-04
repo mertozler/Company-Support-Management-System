@@ -15,5 +15,7 @@ namespace EntityLayer.Concrete
         public Firm Firm { get; set; }
         public int ServiceId { get; set; }
         public Service Service { get; set; }
+
+        public DateTime FirmServiceCreateDate { get; set; }
     }
 }

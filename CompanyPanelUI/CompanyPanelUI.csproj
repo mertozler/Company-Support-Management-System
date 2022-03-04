@@ -8,6 +8,7 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="10.3.6" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+    <PackageReference Include="Hangfire" Version="1.8.0-beta4" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.14" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.12" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.12" />
@@ -17,16 +18,23 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="5.0.1-dev-00262" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.1-dev-00296" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.7.1-dev-00011" />
+    <PackageReference Include="X.PagedList" Version="8.1.0" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.1.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BackgroundJobs\BackgroundJobs.csproj" />
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\NewFolder\" />
+    <Folder Include="Data\Migrations" />
+    <Folder Include="Pages" />
     <Folder Include="wwwroot\DemandFiles\" />
   </ItemGroup>
 

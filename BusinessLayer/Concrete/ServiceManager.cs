@@ -22,6 +22,7 @@ namespace BusinessLayer.Concrete
         {
             return _serviceDal.GetListAll();
         }
+       
 
         public void TAdd(Service t)
         {

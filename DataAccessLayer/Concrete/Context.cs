@@ -11,11 +11,30 @@ namespace DataAccessLayer.Concrete
 {
     public class Context:DbContext
     {
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=CompanyPanel_DB; integrated security=true;");
+            optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=CompanyPanelNew_DB; integrated security=true;");
+           
         }
+        
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);          
+
+
+            builder.Entity<CustomUser>().ToTable("CustomUser", build => build.ExcludeFromMigrations());
+            builder.Entity<Setting>().HasData(
+                new Setting
+                {
+                    Id = 1,
+                    SettingName = "DeleteLogFilterByDay",
+                    SettingValue = "2"
+                }
+            );
+           
+        }
+        
 
         public DbSet<Demand> Demands {get; set;}
         public DbSet<Firm> Firms {get; set;}
@@ -24,6 +43,15 @@ namespace DataAccessLayer.Concrete
         public DbSet<User> Users { get; set;}
         public DbSet<DemandAnswer> DemandAnswers { get; set;}
         public DbSet<DemandFile> DemandFiles { get; set;}
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<DepartmentEmployee> DepartmentEmployees { get; set; }
+        public DbSet<EmployeeService> EmployeeServices { get; set; }
+        public DbSet<EmployeeDemand> EmployeeDemands { get; set; }
+        public DbSet<ServiceDepartment> ServiceDepartments { get; set; }
+        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Logs> Logs { get; set; }
+        
+        
 
     }
 }

@@ -16,6 +16,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BackgroundJobs.Schedules;
+using DataAccessLayer.Concrete;
+using Hangfire;
 
 namespace CompanyPanelUI
 {
@@ -31,8 +34,11 @@ namespace CompanyPanelUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=CompanyPanel_DB; integrated security=true;"));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=CompanyPanelNew_DB; integrated security=true;"));
             services.AddDatabaseDeveloperPageExceptionFilter();
+            
+
+            services.AddHangfire(_ => _.UseSqlServerStorage("server=(localdb)\\MSSQLLocalDB;database=CompanyPanelNew_DB;Trusted_Connection=True;"));
 
             services.AddDefaultIdentity<CustomUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
@@ -40,6 +46,7 @@ namespace CompanyPanelUI
 
             services.ConfigureApplicationCookie(options =>
             {
+                options.AccessDeniedPath = "/Login/AccesDenied";
                 options.Cookie.Name = "Cookie";
                 options.Cookie.HttpOnly = true;
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(720);
@@ -48,13 +55,16 @@ namespace CompanyPanelUI
                 options.SlidingExpiration = true;
             });
             services.AddControllersWithViews();
+            services.AddTransient<SeedDataForIdentity>();
+           
         }
 
        
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, SeedDataForIdentity seeder)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -68,9 +78,16 @@ namespace CompanyPanelUI
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            
+            app.UseHangfireDashboard("/Admin/Hangfire",new DashboardOptions
+            {
+                DashboardTitle = "CompanyPanel Hangfire Dashboard",
+                AppPath = "/Admin/Index"
+            });
+            app.UseHangfireServer();
 
             app.UseRouting();
-
+            
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -81,6 +98,10 @@ namespace CompanyPanelUI
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+            
+            
+            RecurringJobs.DeleteLogTable();
+            
         }
     }
 }

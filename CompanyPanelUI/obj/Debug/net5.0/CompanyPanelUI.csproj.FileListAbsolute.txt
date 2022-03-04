@@ -579,3 +579,550 @@ D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\ref
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.pdb
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.genruntimeconfig.cache
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\refint\CompanyPanelUI.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentAdd.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentList.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\CreateEmployee.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EmployeeList.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DefineDepartmentForEmployee.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentRegisterForEmployee.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\DemandList.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\Index.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\DemandAnswerUser.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\ChangeDemandService.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\EmployeeDemandAssignment.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\EmployeeDemandDepartmentAssignment.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditDepartment.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\AccesDenied.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\Confirm.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\ForgotPassword.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\ResetPassword.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\appsettings.Development.json
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\appsettings.json
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.StaticWebAssets.xml
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.exe
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.deps.json
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.runtimeconfig.json
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.runtimeconfig.dev.json
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.Views.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.Views.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\FluentValidation.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Humanizer.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\BusinessLayer.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\DataAccessLayer.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\EntityLayer.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\BusinessLayer.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\EntityLayer.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.csproj.AssemblyReference.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.AssemblyInfoInputs.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.AssemblyInfo.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.csproj.CoreCompileInputs.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.MvcApplicationPartsAssemblyInfo.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.MvcApplicationPartsAssemblyInfo.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorAssemblyInfo.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorAssemblyInfo.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\scopedcss\bundle\CompanyPanelUI.styles.css
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\staticwebassets\CompanyPanelUI.StaticWebAssets.Manifest.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\staticwebassets\CompanyPanelUI.StaticWebAssets.xml
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.TagHelpers.input.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.TagHelpers.output.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorCoreGenerate.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\Contact.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\CreateEmployee.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\CreateService.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DefineDepartmentForEmployee.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DemandAnswerUser.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DemandList.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentAdd.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentList.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentRegisterForEmployee.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditDepartment.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditService.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditUser.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EmployeeList.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\FirmList.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\Firms.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\GetFirm.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\ServiceDefine.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\ServiceDefineForFirm.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\ServiceList.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\UserApplicationConfirm.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\UserList.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\UserRegister.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\ChangeDemandService.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\DemandAnswerUser.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\DemandList.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\EmployeeDemandAssignment.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\EmployeeDemandDepartmentAssignment.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\Index.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\AccesDenied.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\Confirm.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\ForgotPassword.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\Register.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\RegisterSuccessful.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\ResetPassword.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\NavbarPartial.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\SidebarPartial.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\AddDemand.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\DemandListUser.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\GoDemandChat.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorTargetAssemblyInfo.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorTargetAssemblyInfo.cs
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.Views.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.csproj.CopyComplete
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\refint\CompanyPanelUI.dll
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.pdb
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.genruntimeconfig.cache
+D:\teslimyedeği\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\ref\CompanyPanelUI.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\appsettings.Development.json
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\appsettings.json
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.StaticWebAssets.xml
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.exe
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.deps.json
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.runtimeconfig.json
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.runtimeconfig.dev.json
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.pdb
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.Views.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\CompanyPanelUI.Views.pdb
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\FluentValidation.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Humanizer.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\BusinessLayer.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\DataAccessLayer.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\EntityLayer.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\BusinessLayer.pdb
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\EntityLayer.pdb
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.csproj.AssemblyReference.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.AssemblyInfoInputs.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.AssemblyInfo.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.csproj.CoreCompileInputs.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.MvcApplicationPartsAssemblyInfo.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.MvcApplicationPartsAssemblyInfo.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorAssemblyInfo.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorAssemblyInfo.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\scopedcss\bundle\CompanyPanelUI.styles.css
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\staticwebassets\CompanyPanelUI.StaticWebAssets.Manifest.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\staticwebassets\CompanyPanelUI.StaticWebAssets.xml
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.TagHelpers.input.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.TagHelpers.output.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorCoreGenerate.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\Contact.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\CreateEmployee.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\CreateService.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DefineDepartmentForEmployee.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DemandAnswerUser.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DemandList.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentAdd.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentList.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\DepartmentRegisterForEmployee.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditDepartment.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditService.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditUser.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EmployeeList.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\FirmList.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\Firms.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\GetFirm.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\ServiceDefine.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\ServiceDefineForFirm.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\ServiceList.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\UserApplicationConfirm.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\UserList.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\UserRegister.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\ChangeDemandService.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\DemandAnswerUser.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\DemandList.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\EmployeeDemandAssignment.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\EmployeeDemandDepartmentAssignment.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\Index.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\AccesDenied.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\Confirm.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\ForgotPassword.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\Register.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\RegisterSuccessful.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Login\ResetPassword.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\NavbarPartial.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\SidebarPartial.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\AddDemand.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\DemandListUser.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\GoDemandChat.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorTargetAssemblyInfo.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.RazorTargetAssemblyInfo.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.Views.pdb
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.csproj.CopyComplete
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.dll
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.pdb
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\CompanyPanelUI.genruntimeconfig.cache
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\ref\CompanyPanelUI.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Hangfire.AspNetCore.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Hangfire.Core.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Hangfire.SqlServer.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ca\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fa\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\nb\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\nl\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-PT\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr-TR\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-TW\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh\Hangfire.Core.resources.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\BackgroundJobs.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\BackgroundJobs.pdb
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\refint\CompanyPanelUI.dll
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\Contact.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\Contact.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.AspNetCore.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.File.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.MSSqlServer.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.PeriodicBatching.dll
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\LogList.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\LogDetails.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\JetBrains.Annotations.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\X.PagedList.dll
+D:\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\Settings.cshtml.g.cs
+D:\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditSettings.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Hangfire.AspNetCore.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Hangfire.Core.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Hangfire.SqlServer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\JetBrains.Annotations.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.AspNetCore.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.File.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.MSSqlServer.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\Serilog.Sinks.PeriodicBatching.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\X.PagedList.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\ca\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\de\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\es\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fa\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\fr\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\nb\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\nl\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-BR\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt-PT\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\pt\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\tr-TR\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh-TW\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\zh\Hangfire.Core.resources.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\BackgroundJobs.dll
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\bin\Debug\net5.0\BackgroundJobs.pdb
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\EditSettings.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\LogDetails.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\LogList.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Admin\Settings.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\Employee\Contact.cshtml.g.cs
+D:\MERT\Coding\.NET CORE\Github\CompanyPanel\CompanyPanelUI\obj\Debug\net5.0\Razor\Views\User\Contact.cshtml.g.cs

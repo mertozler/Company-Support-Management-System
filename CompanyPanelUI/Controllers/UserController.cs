@@ -3,19 +3,18 @@ using BusinessLayer.ValidationRules;
 using CompanyPanelUI.DTOS;
 using CompanyPanelUI.Models.DemandListViewModel;
 using CompanyPanelUI.Models.DemandReplyViewModel;
-using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using BackgroundJobs.Schedules;
 
 namespace CompanyPanelUI.Controllers
 {
@@ -27,7 +26,7 @@ namespace CompanyPanelUI.Controllers
         DemandFileManager demandFileManager = new DemandFileManager(new EfDemandFileRepository());
         DemandAnswerManager demandAnswerManager = new DemandAnswerManager(new EfDemandAnswerRepository());
         ServiceManager serviceManager = new ServiceManager(new EfServiceRepository());
-        Context context = new Context();
+        private DepartmentManager _departmentManager = new DepartmentManager(new EfDepartmentRepository());
         private readonly UserManager<CustomUser> _userManager;
         private readonly SignInManager<CustomUser> _signInManager;
 
@@ -45,6 +44,7 @@ namespace CompanyPanelUI.Controllers
         {
             CustomUser currentUser = await _userManager.GetUserAsync(HttpContext.User);
             var values = demandManager.getDemandByUserId(currentUser.Id);
+            values = values.AsEnumerable().OrderByDescending(x => x.DemandCreateTime).ToList();
             DemandListViewModel demandListModel = new DemandListViewModel();
             demandListModel.Demands = values;
             demandListModel.Services = serviceManager.GetList();
@@ -124,6 +124,7 @@ namespace CompanyPanelUI.Controllers
             newDemand.DemandStatus = true;
             newDemand.ServiceId = model.ServiceId;
             newDemand.DemandCreateTime = DateTime.Now;
+            newDemand.DepartmentId = _departmentManager.GetDefaultDepartment().DepartmentId;
             ValidationResult results = demandValidator.Validate(newDemand);
             
 
@@ -154,6 +155,7 @@ namespace CompanyPanelUI.Controllers
                         demandFile.DemandFilePath = newFileName;
                         demandFile.DemandId = demandId;
                         demandFileManager.TAdd(demandFile);
+                        DelayedJobs.SendMailForDepartmentIfNotAnswered(newDemand.DemandId);
                         return RedirectToAction("GoDemandChat", "User", new { @id = demandId });
                             }
                         }
@@ -162,8 +164,10 @@ namespace CompanyPanelUI.Controllers
                 {
                     demandManager.TAdd(newDemand);
                     int demandId = newDemand.DemandId;
+                    DelayedJobs.SendMailForDepartmentIfNotAnswered(newDemand.DemandId);
                     return RedirectToAction("GoDemandChat", "User", new { @id = demandId });
                 }
+                
             }
             else
             {
@@ -181,6 +185,7 @@ namespace CompanyPanelUI.Controllers
         [HttpGet]
         public async Task<IActionResult> GoDemandChatAsync(int id)
         {
+            ViewBag.id = id;
             DemandReplyViewModel model = new DemandReplyViewModel();
             var demand = demandManager.GetDemandById(id);
             var demandFiles = demandFileManager.GetFileByDemandId(id);
@@ -189,11 +194,11 @@ namespace CompanyPanelUI.Controllers
             List<DemandAndAnswerWm> demandandanswermodel = new List<DemandAndAnswerWm>();
             if (demandAnswer.Count == 0)
             {
-                demandandanswermodel.Add(new DemandAndAnswerWm { DemandFilePath = demandFiles, UserId = demand[0].UserId, DemandId = demand[0].DemandId, DemandTitle = demand[0].DemandTitle, ServiceId = demand[0].ServiceId, DemandContent = demand[0].DemandContent, DemantCreateDate = demand[0].DemandCreateTime, DemandStatus = demand[0].DemandStatus, UserName = user.NameSurname });
+                demandandanswermodel.Add(new DemandAndAnswerWm {DemandReadStatus = demand[0].DemandReadTime, DemandFilePath = demandFiles, UserId = demand[0].UserId, DemandId = demand[0].DemandId, DemandTitle = demand[0].DemandTitle, ServiceId = demand[0].ServiceId, DemandContent = demand[0].DemandContent, DemantCreateDate = demand[0].DemandCreateTime, DemandStatus = demand[0].DemandStatus, UserName = user.NameSurname });
             }
             else
             {
-                demandandanswermodel.Add(new DemandAndAnswerWm { DemandFilePath = demandFiles, UserId = demand[0].UserId, DemandId = demand[0].DemandId, DemandTitle = demand[0].DemandTitle, ServiceId = demand[0].ServiceId, DemandContent = demand[0].DemandContent, DemantCreateDate = demand[0].DemandCreateTime, DemandStatus = demand[0].DemandStatus, UserName = user.NameSurname, DemandAnswer = demandAnswer[0].Answer, DemandAnswerDate = demandAnswer[0].DemandAnswerDate });
+                demandandanswermodel.Add(new DemandAndAnswerWm { DemandReadStatus = demand[0].DemandReadTime,DemandFilePath = demandFiles, UserId = demand[0].UserId, DemandId = demand[0].DemandId, DemandTitle = demand[0].DemandTitle, ServiceId = demand[0].ServiceId, DemandContent = demand[0].DemandContent, DemantCreateDate = demand[0].DemandCreateTime, DemandStatus = demand[0].DemandStatus, UserName = user.NameSurname, DemandAnswer = demandAnswer });
             }
 
             model.DemandAndAnswerWmList = demandandanswermodel;
@@ -201,6 +206,25 @@ namespace CompanyPanelUI.Controllers
         }
         [HttpPost]
         public IActionResult GoDemandChat(DemandReplyViewModel data)
+        {
+            DemandAnswer demandAnswer = new DemandAnswer();
+            demandAnswer.DemandId = data.DemandIdNew;
+            demandAnswer.Answer = data.DemandAnswerNew;
+            demandAnswer.DemandAnswerDate = DateTime.Now;
+            demandAnswer.DemandAnswerType = 1;
+            demandAnswerManager.TAdd(demandAnswer);
+            return RedirectToAction("GoDemandChat", "User");
+        }
+
+        public IActionResult ChangeDemandStatus(int id)
+        {
+            var selectedDemand = demandManager.TGetById(id);
+            selectedDemand.DemandStatus = false;
+            demandManager.ChangeStatusValue(id);
+            return RedirectToAction("DemandListUser", "User");
+        }
+
+        public IActionResult Contact()
         {
             return View();
         }

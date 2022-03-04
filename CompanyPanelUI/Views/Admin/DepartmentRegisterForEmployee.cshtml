@@ -1,0 +1,124 @@
+﻿@model CompanyPanelUI.Models.DepartmentRegisterForEmployeeViewModel.DepartmentRegisterForEmployeeViewModel
+
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+
+
+<div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Personel Kaydı</h3>
+              </div>
+
+              <div class="card">
+                  <div class="card-header">
+                        <h3 class="card-title">Firma Seçin</h3>
+                        </div>
+                  <form id="make_checkbox_select" asp-action="DepartmentRegisterForEmployee" method="post" asp-controller="Admin">
+                      <select name="FirmId" asp-for="FirmId">
+                          @foreach (var item in Model.allFirms)
+                          {
+                              <option value="@item.FirmId">@item.FirmName</option>
+
+                          }
+                      </select>
+                      
+                      <div>
+                          <div class="card-header">
+                              <h3 class="card-title">Bölüm Seçin</h3>
+                          </div>
+                           @foreach (var item in Model.allDepartment)
+                                                                {
+                                                                    <input id="DepartmentId" type="checkbox" name="DepartmentId" value="@item.DepartmentId" />
+                                                                    <label>@item.DepartmentName</label>
+                                                                }
+                      </div>
+                      
+                      <div id="serviceVisibility">
+                          <div class="card-header">
+                              <h3 class="card-title">Servis Seçin</h3>
+                          </div>
+                          
+                          <div>
+                              @foreach (var item in Model.getServicesForSelectedDepartment)
+                                      {
+                                          <input id="ServiceId" type="checkbox" name="ServiceId" value="@item.ServiceId" />
+                                          <label>@item.ServiceName</label>
+                                      }
+                          </div>
+                      </div>
+                          
+                          
+                      
+                      
+                      
+                      <div class="card">
+                              <div class="card-header">
+                                  <h3 class="card-title">Personel Bilgisi</h3>
+                              </div>
+
+                              <div class="card-body">
+                                      <input type="hidden" asp-for="UserId" name="UserId" value="@Model.User.Id" />
+
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Kullanıcı Adı Soyadı</label>
+                                          <input type="text" class="form-control" id="UserNameSurname" name="FirmName" placeholder="@Model.User.NameSurname">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="exampleInputPassword1">Kullanıcı Mail</label>
+                                          <input type="number" class="form-control" id="UserMail" name="UserMail" placeholder="@Model.User.Email">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Kullanıcı Telefonu</label>
+                                          <input type="number" class="form-control" id="UserMail" name="UserMail" placeholder="@Model.User.PhoneNumber">
+                                      </div>
+                                     
+                                  
+                              </div>
+                              <!-- /.card-body -->
+
+                              <div class="card-footer">
+                                  <button type="submit" onclick="updatemark()"class="btn btn-primary">Personel Şirket ve Hizmet Kaydı Yap</button>
+                              </div>
+                          </div>
+                      </form>
+
+</div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script>
+ /*$("#departmentId").change(function () {
+        var selectedDepartment = this.value;
+        if (selectedDepartment == @Model.defaultDepartmentId)
+            {
+                document.getElementById("serviceVisibility").style.display = "block"
+            }
+        else {
+            document.getElementById("serviceVisibility").style.display = "none"
+            }
+    });
+ if($("#departmentId").val() == @Model.defaultDepartmentId){
+     {
+                     document.getElementById("serviceVisibility").style.display = "block"
+               
+ }
+   }
+              else {
+                  document.getElementById("serviceVisibility").style.display = "none"
+                  }   */
+                   function updatemark(arg)  
+                        {  
+                         
+                              
+                        }  
+                  
+                  
+</script>
+
+

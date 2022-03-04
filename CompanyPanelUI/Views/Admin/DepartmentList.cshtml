@@ -1,0 +1,74 @@
+﻿@model List<EntityLayer.Concrete.Department>
+
+@{
+    ViewBag.Title = "DepartmentList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br/>
+@if (Model.Count != 0)
+{
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Kayıtlı Bölümler</h3>
+        </div>
+
+        <br />
+        <div class="card">
+            
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Bölüm Adı</th>
+                            <th>Bölüm Açıklaması</th>
+                            <th>Bölüm Varsayılan Durumu</th>
+                            <th>Bölüm Düzenle</th>
+                            <th>Bölümü Sil</th>
+                            <th>Bölümü Varsayılan Yap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>@item.DepartmentId</td>
+                                <td>@item.DepartmentName</td>
+                                <td>@item.DepartmentAbout</td>
+                                @if (item.DepartmentisDefault == false)
+                                {
+                                    <td class="bg-danger">Departman varsayılan değil. (Eğer varsayılan yapmak istiyorsanız sağ taraftaki + simgesine basınız)</td>
+                                }
+                                else
+                                {
+                                    <td class="bg-success">Departman varsayılan durumda</td>
+                                }
+                                <td>
+                                    <a href="/Admin/EditDepartment/@item.DepartmentId" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                                </td>
+                                <td>
+                                    
+                                                                    <a href="/Admin/DeleteDepartment/@item.DepartmentId" class="btn btn-warning btn-sm" onclick="return confirm('@item.DepartmentName isimli bölümü silmek istediğinden emin misin? Bu bölüme kayıtlı personellerin hesapları silinecektir. Bu sorumluluğu kabul ediyor musunuz?')"><i class="fas fa-trash"></i></a>
+                                </td>
+                                <td>
+                                     <a href="/Admin/SetDepartmentDefaultValue/@item.DepartmentId" class="btn btn-warning btn-sm"><i class="fas fa-plus"></i></a>
+                                </td>
+                                
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+}
+else
+{
+    <p>Departman kaydı bulunmamaktadır.</p>
+}

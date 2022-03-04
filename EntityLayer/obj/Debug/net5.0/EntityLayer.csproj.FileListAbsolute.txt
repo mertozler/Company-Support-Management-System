@@ -46,3 +46,27 @@ D:\MERT\Coding\.NET CORE\Github\CompanyPanel\EntityLayer\obj\Debug\net5.0\Entity
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
 D:\MERT\Coding\.NET CORE\Github\CompanyPanel\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+D:\teslimyedeği\CompanyPanel\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+D:\teslimyedeği\CompanyPanel\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+D:\teslimyedeği\CompanyPanel\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+D:\teslimyedeği\CompanyPanel\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+D:\CompanyPanel\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+D:\CompanyPanel\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+D:\CompanyPanel\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+D:\CompanyPanel\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll

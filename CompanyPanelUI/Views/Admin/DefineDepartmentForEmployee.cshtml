@@ -1,0 +1,67 @@
+﻿@model IList<EntityLayer.Concrete.CustomUser>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@if(Model.Any())
+{
+    <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Bölüm ve Şirket Ataması Yapılmamış Personeller</h3>
+              </div>
+              
+              <br/>
+              <div class="card">
+                        <div class="card-header">
+                        <h3 class="card-title">Personeller</h3>
+                        </div>
+ 
+                        <div class="card-body">
+                        <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Personelin Adı Soyadı</th>
+                        <th>Personelin Maili</th>
+                        <th>Personelin Telefonu</th>
+                        <th>Personelin Firm Kaydı</th>
+                        
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var item  in Model)
+                        {
+                        <tr>
+                           
+                        <td>@item.Id</td>
+                        <td>@item.NameSurname</td>
+                        <td>@item.Email</td>
+                            <td>@item.PhoneNumber</td>
+                            @if (item.FirmId == null)
+                            {
+                                <td class="bg-danger">Personelin firması yoktur. Lütfen personele firma tanımlayınız.</td>
+                            }
+                            else
+                            {
+                                <td class="bg-success">@item.FirmId</td>
+                            }
+                        
+                        <td>
+                            <a href="/Admin/DepartmentRegisterForEmployee/?userId=@item.Id" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                              
+                        </td>
+                       
+                        </tr>
+                         }
+                        </tbody>
+                        </table>
+                        </div>
+
+
+                        </div>
+                        </div>
+
+                      
+}

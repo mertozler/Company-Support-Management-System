@@ -69,7 +69,7 @@ namespace BusinessLayer.Concrete
 
         public Demand TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _demandDal.GetById(id);
         }
 
         public void TUpdate(Demand t)

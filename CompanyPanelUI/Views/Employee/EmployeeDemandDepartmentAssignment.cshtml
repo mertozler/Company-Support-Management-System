@@ -1,0 +1,56 @@
+﻿@model CompanyPanelUI.Models.EmployeeDemandDepartmentAssignmentViewModel.EmployeeDemandDepartmentAssignmentViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Talep Bölüm Kategorisini Değiştir</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start --> 
+            
+    <div class="card-body">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Talep Başlığı</label>
+            <input type="text"  class="form-control" id="ServiceAbout"  name="ServiceAbout"  placeholder="@Model.Demand[0].DemandTitle" readonly>
+                                  
+        </div>
+        <div class="form-group">
+
+            <label for="exampleInputEmail1">Talebin kayıtlı olduğu bölüm</label>
+            <input type="text" class="form-control" id="ServiceName" name="ServiceName" placeholder="@Model.Demand[0].Department.DepartmentName" readonly>
+
+        </div>
+        <form id="make_checkbox_select" asp-action="EmployeeDemandDepartmentAssignment" method="post" asp-controller="Employee">
+            
+            <div class="form-group">
+                <label for="exampleInputEmail1">Hizmetler</label>
+                <select name="departmentId" id="departmentId" asp-for="departmentId">
+                    @foreach (var item in Model.Department)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" asp-for="departmentId" type="radio" name="departmentId" value="@item.DepartmentId" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                @item.DepartmentName
+                            </label>
+                        </div>
+                    }
+                </select>
+
+
+
+
+
+            </div>
+            <!-- /.card-body -->
+            <input type="hidden" asp-for="demandId" name="demandId" value="@Model.Demand[0].DemandId" />
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Değiştir</button>
+            </div>
+        </form>
+    </div>
+</div>
+

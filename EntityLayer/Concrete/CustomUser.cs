@@ -14,6 +14,10 @@ namespace EntityLayer.Concrete
 
         [Display(Name = "Firma Id")]
         public int? FirmId { get; set; }
+        
+        [Display(Name = "Bolum Id")]
+        public int? DepartmentId { get; set; }
+        
 
     }
 }

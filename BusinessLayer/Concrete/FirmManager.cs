@@ -28,6 +28,11 @@ namespace BusinessLayer.Concrete
             return _firmDal.GetListAll(x => x.FirmId == id);
         }
 
+        public List<Firm> GetFirmByMail(string mail)
+        {
+            return _firmDal.GetListAll(x => x.FirmMail == mail);
+        }
+
         public void TAdd(Firm t)
         {
             _firmDal.Insert(t);

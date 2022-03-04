@@ -1,0 +1,34 @@
+﻿
+@model EntityLayer.Concrete.Department
+
+@{
+    ViewBag.Title = "DepartmentAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Bölüm Oluştur</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start --> 
+  <form asp-action="DepartmentAdd" method="post" asp-controller="Admin">
+    <div class="card-body">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Bölüm Adı</label>
+        <input type="text" asp-for="DepartmentName" class="form-control" id="DepartmentName"  name="DepartmentName" placeholder="Bölüm Adı">
+        
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Bölüm Açıklaması</label>
+        <input type="text" asp-for="DepartmentAbout" class="form-control" id="DepartmentAbout"  name="DepartmentAbout" placeholder="Bölüm Açıklaması">
+        
+      </div>
+    </div>
+    <!-- /.card-body -->
+
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary">Departman Ekle</button>
+    </div>
+  </form>
+</div>

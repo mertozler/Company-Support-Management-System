@@ -12,11 +12,14 @@ namespace EntityLayer.Concrete
         [Key]
         public int DemandId { get; set; }
         public int ServiceId { get; set; }
-        public Service service {get; set;}
+        public Service Service {get; set;}
+        public int DepartmentId { get; set; }
+        public Department Department { get; set; }
         public string UserId { get; set; }
         public string DemandTitle { get; set; }
         public string DemandContent { get; set; }
         public DateTime DemandCreateTime { get; set; }
+        public DateTime? DemandReadTime { get; set; }
         public bool DemandStatus { get; set; }
     }
 }

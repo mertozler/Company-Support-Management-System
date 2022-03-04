@@ -1,0 +1,254 @@
+﻿@using CompanyPanelUI.Models.DemandReplyViewModel
+@using EntityLayer.Concrete
+@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<CustomUser> UserManager
+@using CompanyPanelUI.Models.UserListViewModel
+
+@model DemandReplyViewModel
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+    var girisYapanKullanici = await UserManager.GetUserAsync(User);
+}
+
+
+
+<br/>
+<br/>
+<div class="col-md-12">
+  
+  <div class="card direct-chat direct-chat-warning">
+     
+    <div class="card-header">
+      @foreach (var item in Model.DemandAndAnswerWmList)
+      {
+        <h3 class="card-title">Talep No: @item.DemandId | @item.DemandTitle</h3>
+      }
+      <div class="card-tools">
+        <span id="historyBtn" data-widget="pushmenu">Talep Geçmişi</span>
+      
+        <div class="btn-group show">
+          <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown">
+            Talep Ayarları
+            <i class="fas fa-wrench"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" role="menu" style="">
+            <a href="/Employee/ChangeDemandStatus/@Model.DemandAndAnswerWmList[0].DemandId" class="dropdown-item">Talebi Kapat</a>
+            <a href="/Employee/EmployeeDemandDepartmentAssignment/@Model.DemandAndAnswerWmList[0].DemandId" class="dropdown-item">Bölüm Ata</a>
+            <a href="/Employee/EmployeeDemandAssignment/@Model.DemandAndAnswerWmList[0].DemandId" class="dropdown-item">Personele Ata</a>
+            <a class="dropdown-divider"></a>
+            <a href="/Employee/ChangeDemandService/@Model.DemandAndAnswerWmList[0].DemandId" class="dropdown-item">Hizmeti Değiştir</a>
+          </div>
+        </div>
+        </div>
+      
+    </div>
+    
+<div class="card-body" style="height: 400px; overflow-y: scroll; padding: 15px;">
+                    
+                    @foreach (var item in Model.DemandAndAnswerWmList)
+                    {
+                      <!-- Conversations are loaded here -->
+                      <div class="direct-chat-infos clearfix">
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg">
+                          <div class="direct-chat-infos clearfix">
+                            <span class="direct-chat-name float-left">@item.UserName</span>
+                            <span class="direct-chat-timestamp float-right">@(((DateTime) item.DemantCreateDate).ToString("dd.MM.yyyy"))</span>
+                          </div>
+                          <img class="direct-chat-img" src="~/dist/img/avatar5.png" alt="message user image">
+                          <div class="direct-chat-text">
+                            @Html.Raw(item.DemandContent)
+                          </div>
+                          <!-- /.direct-chat-text -->
+                        </div>
+                      </div>
+
+
+                      if (item.DemandAnswer != null)
+                      {
+                        foreach (var demandChat in item.DemandAnswer)
+                        {
+                          if (demandChat.DemandAnswerType == 1)
+                          {
+                            <div class="direct-chat-msg">
+                              <div class="direct-chat-infos clearfix">
+                                <span class="direct-chat-name float-left">@item.UserName</span>
+                                <span class="direct-chat-timestamp float-right">@(((DateTime) demandChat.DemandAnswerDate).ToString("dd.MM.yyyy"))</span>
+                              </div>
+                              <img class="direct-chat-img" src="~/dist/img/avatar5.png" alt="message user image">
+                              <div class="direct-chat-text">
+                                @demandChat.Answer
+                              </div>
+                              <!-- /.direct-chat-text -->
+                            </div>
+                          }
+                          else if (demandChat.DemandAnswerType == 2)
+                          {
+                            <div class="direct-chat-msg right">
+                              <div class="direct-chat-infos clearfix">
+                                <span class="direct-chat-name float-right">Personel</span>
+                                <span class="direct-chat-timestamp float-left">@(((DateTime) demandChat.DemandAnswerDate).ToString("dd.MM.yyyy"))</span>
+                              </div>
+                              <img class="direct-chat-img" src="~/dist/img/avatar4.png" alt="message user image">
+                              <div class="direct-chat-text">
+                                @demandChat.Answer
+                              </div>
+                              <!-- /.direct-chat-text -->
+                            </div>
+                          }
+
+                        }
+
+                      }
+                    }
+                  </div>
+                
+                <!-- /.card-body -->
+                    
+                    @foreach (var item in Model.DemandAndAnswerWmList)
+        {
+            
+        
+        }
+                  
+        <div class="card-footer">
+                            <form asp-action="DemandAnswerUser" method="post" asp-controller="Employee">
+                              <div class="input-group">
+                                <input type="text" name="DemandAnswerNew" asp-for="DemandAnswerNew" class="form-control" id="DemandAnswerNew"  placeholder="Cevap yaz..">
+                                <input type="hidden" asp-for="EmployeeID" name="EmployeeID" id="EmployeeID" value="@girisYapanKullanici.Id"/>
+                            <input type="hidden" name="DemandIdNew" asp-for="DemandIdNew" value="@ViewBag.id" />
+                                <span class="input-group-append">
+                                  <button type="submit" class="btn btn-warning">Talep Yanıtla</button>
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+    <!-- /.card-footer-->
+  </div>
+  <!--/.direct-chat -->
+</div>
+              
+               <br />
+
+<div class="card-body">
+  <div class="card-header">
+                     
+    <h3 class="card-title">Dosyalar</h3>
+                   
+  </div>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Dosya Adı</th>
+      <th>Dosyayı İndir</th>
+    </tr>
+    </thead>
+    <tbody>
+                    
+    @foreach(var item in Model.DemandAndAnswerWmList)
+    {
+      foreach(var itemL in item.DemandFilePath)
+      {
+        <tr>
+          <td>@itemL.DemandFilePath</td>
+                        
+          <td>
+            <a href="~/DemandFiles/@itemL.DemandFilePath" download><span class="badge bg-danger">Dosyayı İndir</span></a>
+                              
+          </td>
+        </tr>
+      }
+    }
+    </tbody>
+  </table>
+</div>
+<div class="col-md-6">
+<div id="historyTable"  style="display: none; /* Hidden by default */
+                               position: fixed; /* Stay in place */
+                               z-index: 2; /* Sit on top */
+                               left: 30px;
+                               top: 0;
+                               width: 100%; /* Full width */
+                               height: 100%; /* Full height */
+                               overflow: auto; /* Enable scroll if needed */
+                               background-color: rgb(0,0,0); /* Fallback color */
+                               background-color: rgba(0,0,0,0.4); /*" data-widget="pushmenu" class="table-responsive">
+  <div class="card-header">
+                       
+    <h3 class="card-title">Talep Geçmişi</h3>
+    
+    <span id="closeSpan" style="color: #aaa;
+                   float: right;
+                   font-size: 28px;
+                   font-weight: bold;">&times;</span>
+                     
+  </div>
+    <table class="table table-bordered" style="background-color: #fefefe;
+                                                 margin: 15% auto; /* 15% from the top and centered */
+                                                 padding: 20px;
+                                                 border: 1px solid #888;
+                                                 width: 80%; /* Could">
+      <thead>
+      <tr>
+        <th>Önceki Personel</th>
+        <th>Yeni Personel</th>
+        <th>Değiştirilme Tarihi</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+        
+        @foreach (var item in Model.DemandAndAnswerWmList)
+        {
+          foreach (var history in item.EmployeeHistory)
+          {<tr>
+            <td>
+              @history.BeforeEmployee
+            </td>
+
+            <td>
+              @history.AfterEmployee
+
+            </td>
+      <td>
+        @history.ChangeDate
+      </td>
+        </tr>
+          }
+        }
+
+
+    
+       
+      </tbody>
+    </table>
+</div>
+</div>
+<script>
+  var modal = document.getElementById("historyTable");
+  
+  var btn = document.getElementById("historyBtn");
+  
+  var span = document.getElementById("closeSpan");
+  
+  
+  
+  
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>

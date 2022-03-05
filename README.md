@@ -10,7 +10,7 @@ Company Support Manangment System was developed with .NET 5.0. N-Tier architectu
 - Managing user requests with personnel records.
 - Background processes, scheduled tasks with Hangfire.
 - Mail notifications with SMTP. Timed or instant notification messages to personnel in case of a request being assigned or not answered.
-- Logging and viewing with Serilog and Serilog MySQLServer Sinks.
+- Logging and viewing with Serilog and Serilog MSSQLServer Sinks.
 - Controllable, customizable settings for the admin user.
 - Instant, fast and file sharing messaging between user and staff
 
